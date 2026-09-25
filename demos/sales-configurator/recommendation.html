@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contoso Secure · Quote Builder · Recommendation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../_base.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <div class="flex h-full">
+      <!-- Sidebar -->
+      <aside class="flex w-64 flex-col bg-slate-900 text-slate-300">
+        <div class="flex items-center gap-2 px-6 py-5">
+          <div class="grid h-8 w-8 place-items-center rounded-lg bg-teal-500 font-extrabold text-white">C</div>
+          <div>
+            <div class="text-sm font-bold text-white">Contoso Secure</div>
+            <div class="text-xs text-slate-400">Quote Builder</div>
+          </div>
+        </div>
+        <nav class="mt-4 space-y-1 px-3 text-sm">
+          <a class="flex items-center gap-3 rounded-lg bg-teal-500/15 px-3 py-2 font-semibold text-teal-300">● New quote</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ My quotes</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ Product catalog</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ Selling rules</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ Imports</a>
+        </nav>
+        <div class="mt-auto border-t border-slate-800 px-6 py-4 text-xs">
+          <div class="font-semibold text-white">Alex Morgan</div>
+          <div class="text-slate-400">Account Executive · SSO</div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="flex-1 overflow-hidden px-12 py-8">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="text-sm text-slate-500">Quotes / New quote / Northwind Logistics (demo)</div>
+            <h1 class="mt-1 text-2xl font-bold text-slate-900">Recommended bundle</h1>
+            <p class="mt-1 text-slate-500">Built from your answers by the recommendation agent, then checked against every selling rule.</p>
+          </div>
+          <div class="flex gap-3">
+            <button class="rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold">↻ Regenerate</button>
+            <button class="rounded-lg bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white">Accept all &amp; build quote →</button>
+          </div>
+        </div>
+
+        <!-- Stepper -->
+        <ol class="mt-5 flex items-center gap-3 text-sm">
+          <li class="flex items-center gap-2 font-semibold text-teal-700"><span class="grid h-7 w-7 place-items-center rounded-full bg-teal-600 text-white">✓</span>Company</li>
+          <li class="h-px w-12 bg-teal-600"></li>
+          <li class="flex items-center gap-2 font-semibold text-teal-700"><span class="grid h-7 w-7 place-items-center rounded-full bg-teal-600 text-white">✓</span>Users &amp; sites</li>
+          <li class="h-px w-12 bg-teal-600"></li>
+          <li class="flex items-center gap-2 font-semibold text-teal-700"><span class="grid h-7 w-7 place-items-center rounded-full bg-teal-600 text-white">✓</span>Security needs</li>
+          <li class="h-px w-12 bg-teal-600"></li>
+          <li class="flex items-center gap-2 font-semibold text-teal-700"><span class="grid h-7 w-7 place-items-center rounded-full bg-teal-600 text-white">4</span>Review</li>
+        </ol>
+
+        <div class="mt-5 grid grid-cols-3 gap-6">
+          <!-- Bundle cards -->
+          <section class="col-span-2 space-y-3">
+            <div class="flex items-center justify-between rounded-xl border border-violet-200 bg-violet-50 px-4 py-3 text-sm text-violet-800">
+              <span>✦ <b>Agent summary:</b> 2,500 users · 12 branches · 40% remote · EU residency → 4 products, 1 dependency</span>
+              <span class="shrink-0 whitespace-nowrap rounded-full bg-white px-2.5 py-0.5 text-xs font-semibold text-violet-700">92% confidence</span>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-teal-50 text-xl text-teal-700">🌐</div>
+                <div class="min-w-0 flex-1">
+                  <div class="flex items-center gap-2 whitespace-nowrap">
+                    <span class="font-bold text-slate-900">Secure Web Gateway</span>
+                    <span class="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] text-slate-500">SWG-ENT-USR</span>
+                    <span class="rounded-full bg-teal-50 px-2 py-0.5 text-xs font-semibold text-teal-700">Core</span>
+                  </div>
+                  <p class="mt-1 text-sm text-slate-600"><span class="font-semibold text-violet-700">Why:</span> remote users browse without the office proxy; inline TLS inspection covers the 40% remote workforce.</p>
+                </div>
+                <div class="flex shrink-0 items-center gap-2">
+                  <div class="flex items-center rounded-lg border border-slate-300 text-sm"><span class="px-2.5 py-1.5 text-slate-400">−</span><span class="w-14 border-x border-slate-300 py-1.5 text-center font-semibold">2,500</span><span class="px-2.5 py-1.5 text-slate-400">+</span></div>
+                  <div class="w-24 text-right"><div class="font-bold">$72,000</div><div class="text-xs text-slate-400">/ year</div></div>
+                </div>
+              </div>
+              <div class="mt-2 flex gap-2 text-xs" style="padding-left: 3.75rem">
+                <span class="rounded-md bg-teal-600 px-3 py-1 font-semibold text-white">✓ Accepted</span>
+                <span class="rounded-md border border-slate-300 px-3 py-1 font-semibold text-slate-600">Adjust</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-teal-50 text-xl text-teal-700">🔐</div>
+                <div class="min-w-0 flex-1">
+                  <div class="flex items-center gap-2 whitespace-nowrap">
+                    <span class="font-bold text-slate-900">Zero Trust Access</span>
+                    <span class="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] text-slate-500">ZTA-PRO-USR</span>
+                    <span class="rounded-full bg-teal-50 px-2 py-0.5 text-xs font-semibold text-teal-700">Core</span>
+                  </div>
+                  <p class="mt-1 text-sm text-slate-600"><span class="font-semibold text-violet-700">Why:</span> replaces the legacy VPN for 1,000 remote users; per-app policies meet the stated least-privilege goal.</p>
+                </div>
+                <div class="flex shrink-0 items-center gap-2">
+                  <div class="flex items-center rounded-lg border border-slate-300 text-sm"><span class="px-2.5 py-1.5 text-slate-400">−</span><span class="w-14 border-x border-slate-300 py-1.5 text-center font-semibold">2,500</span><span class="px-2.5 py-1.5 text-slate-400">+</span></div>
+                  <div class="w-24 text-right"><div class="font-bold">$60,000</div><div class="text-xs text-slate-400">/ year</div></div>
+                </div>
+              </div>
+              <div class="mt-2 flex gap-2 text-xs" style="padding-left: 3.75rem">
+                <span class="rounded-md bg-teal-600 px-3 py-1 font-semibold text-white">✓ Accepted</span>
+                <span class="rounded-md border border-slate-300 px-3 py-1 font-semibold text-slate-600">Adjust</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="rounded-2xl border-2 border-amber-300 bg-white p-4 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-teal-50 text-xl text-teal-700">🧱</div>
+                <div class="min-w-0 flex-1">
+                  <div class="flex items-center gap-2 whitespace-nowrap">
+                    <span class="font-bold text-slate-900">Firewall as a Service</span>
+                    <span class="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] text-slate-500">FWS-BR-SITE</span>
+                    <span class="rounded-full bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700">Adjusted by you</span>
+                  </div>
+                  <p class="mt-1 text-sm text-slate-600"><span class="font-semibold text-violet-700">Why:</span> one site license per branch; retires 12 on-prem appliances reaching end of support next year.</p>
+                </div>
+                <div class="flex shrink-0 items-center gap-2">
+                  <div class="flex items-center rounded-lg border-2 border-amber-300 text-sm"><span class="px-2.5 py-1.5 text-slate-400">−</span><span class="w-14 border-x border-amber-200 py-1.5 text-center font-semibold">14</span><span class="px-2.5 py-1.5 text-slate-400">+</span></div>
+                  <div class="w-24 text-right"><div class="font-bold">$33,600</div><div class="text-xs text-slate-400">/ year</div></div>
+                </div>
+              </div>
+              <div class="mt-2 flex items-center gap-2 text-xs" style="padding-left: 3.75rem">
+                <span class="rounded-md bg-teal-600 px-3 py-1 font-semibold text-white">✓ Accepted</span>
+                <span class="rounded-md border border-slate-300 px-3 py-1 font-semibold text-slate-600">Adjust</span>
+                <span class="text-slate-500">Agent suggested 12 · you added 2 HQ sites</span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-teal-50 text-xl text-teal-700">☁️</div>
+                <div class="min-w-0 flex-1">
+                  <div class="flex items-center gap-2 whitespace-nowrap">
+                    <span class="font-bold text-slate-900">Cloud Access Security Broker</span>
+                    <span class="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] text-slate-500">CASB-STD-USR</span>
+                  </div>
+                  <p class="mt-1 text-sm text-slate-600"><span class="font-semibold text-violet-700">Why:</span> 38 SaaS apps in use and EU residency flagged; shadow-IT discovery and DLP policies recommended.</p>
+                </div>
+                <div class="flex shrink-0 items-center gap-2">
+                  <div class="flex items-center rounded-lg border border-slate-300 text-sm"><span class="px-2.5 py-1.5 text-slate-400">−</span><span class="w-14 border-x border-slate-300 py-1.5 text-center font-semibold">2,500</span><span class="px-2.5 py-1.5 text-slate-400">+</span></div>
+                  <div class="w-24 text-right"><div class="font-bold">$25,000</div><div class="text-xs text-slate-400">/ year</div></div>
+                </div>
+              </div>
+              <div class="mt-2 flex gap-2 text-xs" style="padding-left: 3.75rem">
+                <span class="rounded-md border border-teal-600 px-3 py-1 font-semibold text-teal-700">Accept</span>
+                <span class="rounded-md border border-slate-300 px-3 py-1 font-semibold text-slate-600">Adjust</span>
+                <span class="rounded-md px-3 py-1 font-semibold text-slate-400">Remove</span>
+                <span class="text-slate-500">Suggested by agent · not yet accepted</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Right panel -->
+          <aside class="space-y-4">
+            <div class="rounded-2xl bg-slate-900 p-6 text-white">
+              <div class="text-xs uppercase tracking-wide text-slate-400">Bundle estimate</div>
+              <div class="mt-2 text-3xl font-extrabold">$197,400</div>
+              <div class="text-sm text-slate-400">per year · 5 line items · before discounts</div>
+              <div class="mt-4 h-2 overflow-hidden rounded-full bg-slate-700">
+                <div class="flex h-full"><div class="w-[36%] bg-teal-400"></div><div class="w-[30%] bg-teal-300"></div><div class="w-[17%] bg-cyan-300"></div><div class="w-[13%] bg-violet-300"></div><div class="w-[4%] bg-amber-300"></div></div>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-5">
+              <div class="flex items-center justify-between">
+                <div class="font-bold text-slate-900">Rules validation</div>
+                <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700">48 / 48 passed</span>
+              </div>
+              <ul class="mt-4 space-y-3 text-sm">
+                <li class="rounded-xl border border-amber-200 bg-amber-50 p-3">
+                  <div class="flex items-center gap-2 font-semibold text-amber-800"><span class="line-through decoration-amber-500">⚠ Incompatibility</span><span class="rounded bg-emerald-600 px-1.5 text-[10px] font-bold uppercase text-white">Resolved</span></div>
+                  <p class="mt-1 text-xs text-amber-900">Legacy VPN add-on conflicts with <b>Zero Trust Access</b>. Removed <span class="font-mono">VPN-LGC-USR</span> from the bundle.</p>
+                  <div class="mt-1 font-mono text-[10px] text-amber-700">rule C-114 · excludes</div>
+                </li>
+                <li class="rounded-xl border border-sky-200 bg-sky-50 p-3">
+                  <div class="flex items-center gap-2 font-semibold text-sky-800">＋ Dependency auto-added</div>
+                  <p class="mt-1 text-xs text-sky-900"><b>Firewall as a Service</b> requires <b>Central Log Store</b>. Added <span class="font-mono">LOG-CEN-1TB</span> × 1 ($6,800).</p>
+                  <div class="mt-1 font-mono text-[10px] text-sky-700">rule D-027 · requires</div>
+                </li>
+                <li class="flex items-start gap-2 text-slate-600"><span class="text-emerald-600">✓</span>Quantity minimums met (ZTA ≥ 250 seats)</li>
+                <li class="flex items-start gap-2 text-slate-600"><span class="text-emerald-600">✓</span>EU data-residency SKUs selected</li>
+                <li class="flex items-start gap-2 text-slate-600"><span class="text-emerald-600">✓</span>Region availability confirmed</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-800">✓ Bundle is rule-compliant and ready to quote</div>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

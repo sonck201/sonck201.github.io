@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Litware Stream · Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../_base.css" />
+    <style>
+      .ph-ember { --ph-a: #7f1d1d; --ph-b: #f43f5e; }
+      .ph-night { --ph-a: #0f172a; --ph-b: #1d4ed8; }
+      .ph-neon { --ph-a: #4c1d95; --ph-b: #ec4899; }
+      .ph-moss { --ph-a: #14532d; --ph-b: #84cc16; }
+      .ph-sand { --ph-a: #78350f; --ph-b: #fbbf24; }
+      .card { position: relative; flex: none; width: 190px; }
+      .art { position: relative; height: 106px; overflow: hidden; border-radius: 10px; }
+      .art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.55), transparent 55%); }
+      .shape { position: absolute; border-radius: 9999px; opacity: .45; filter: blur(1px); }
+    </style>
+  </head>
+  <body class="bg-[#0b0a10] text-zinc-300">
+    <!-- Hero -->
+    <section class="relative h-[360px] overflow-hidden">
+      <div class="ph ph-neon absolute inset-0"></div>
+      <div class="absolute -right-24 top-10 h-[520px] w-[520px] rounded-full bg-pink-400/40 blur-3xl"></div>
+      <div class="absolute right-72 top-40 h-64 w-64 rounded-full bg-indigo-500/50 blur-2xl"></div>
+      <svg class="absolute bottom-24 right-40 h-72 w-[560px] opacity-60" viewBox="0 0 560 288"><path d="M0 288 L120 120 L200 200 L320 40 L440 180 L560 90 L560 288 Z" fill="#1e1b4b" /><path d="M0 288 L90 200 L210 250 L330 150 L470 240 L560 200 L560 288 Z" fill="#0b0a10" opacity=".8" /></svg>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0b0a10] via-[#0b0a10]/70 to-transparent"></div>
+      <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#0b0a10] to-transparent"></div>
+
+      <!-- Nav -->
+      <header class="relative flex items-center justify-between px-12 py-4">
+        <div class="flex items-center gap-10">
+          <div class="flex items-center gap-2">
+            <div class="grid h-8 w-8 place-items-center rounded-lg bg-pink-600 text-sm font-extrabold text-white">▶</div>
+            <span class="text-lg font-extrabold tracking-tight text-white">Litware <span class="text-pink-500">Stream</span></span>
+          </div>
+          <nav class="flex gap-7 text-sm font-medium">
+            <a class="text-white">Home</a><a>Series</a><a>Films</a><a>Clips</a><a>Live</a><a>My list</a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-5 text-sm">
+          <span class="text-lg">⌕</span><span class="text-lg">🔔</span>
+          <div class="flex items-center gap-2"><div class="h-8 w-8 rounded-full bg-gradient-to-br from-amber-300 to-pink-500"></div><span class="text-white">Jamie ▾</span></div>
+        </div>
+      </header>
+
+      <div class="relative mt-1 max-w-2xl px-12">
+        <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-pink-400"><span class="rounded bg-pink-600 px-1.5 py-0.5 text-[10px] tracking-normal text-white">LS</span>Original series</div>
+        <h1 class="mt-2 text-5xl font-extrabold leading-none tracking-tight text-white">The Glass Meridian</h1>
+        <div class="mt-3 flex items-center gap-3 text-sm text-zinc-300">
+          <span class="font-semibold text-emerald-400">96% match</span><span>2026</span><span class="rounded border border-zinc-500 px-1.5 text-xs">16+</span><span>2 seasons</span><span class="rounded border border-zinc-500 px-1.5 text-xs">4K HDR</span>
+        </div>
+        <p class="mt-2 max-w-xl text-sm leading-relaxed text-zinc-300">A cartographer discovers that the city on her maps rearranges itself every night, and only she remembers how it used to be.</p>
+        <div class="mt-4 flex gap-3">
+          <button class="rounded-lg bg-white px-6 py-2.5 font-bold text-black">▶ Play S2 · E4</button>
+          <button class="rounded-lg bg-white/15 px-6 py-2.5 font-semibold text-white backdrop-blur">+ My list</button>
+          <button class="rounded-lg bg-white/15 px-4 py-2.5 font-semibold text-white">ⓘ</button>
+        </div>
+      </div>
+      <div class="absolute bottom-16 right-12 flex gap-1.5"><span class="h-1.5 w-6 rounded-full bg-pink-500"></span><span class="h-1.5 w-1.5 rounded-full bg-white/40"></span><span class="h-1.5 w-1.5 rounded-full bg-white/40"></span><span class="h-1.5 w-1.5 rounded-full bg-white/40"></span></div>
+    </section>
+
+    <!-- Rails -->
+    <div class="relative -mt-12 space-y-4 px-12">
+      <!-- Continue watching -->
+      <section>
+        <div class="flex items-baseline justify-between"><h2 class="font-bold text-white">Continue watching for Jamie</h2><span class="truncate text-xs text-zinc-500">See all ›</span></div>
+        <div class="mt-2 flex gap-3">
+          <div class="card"><div class="art ph ph-neon"><div class="shape left-6 top-4 h-20 w-20 bg-white"></div><div class="absolute bottom-0 left-0 z-10 h-1 w-full bg-white/20"><div class="h-full w-[62%] bg-pink-500"></div></div></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">The Glass Meridian</div><div class="truncate text-xs text-zinc-500">S2 · E4 · 21 min left</div></div>
+          <div class="card"><div class="art ph ph-ember"><div class="shape right-4 top-6 h-16 w-28 bg-amber-200"></div><div class="absolute bottom-0 left-0 z-10 h-1 w-full bg-white/20"><div class="h-full w-[30%] bg-pink-500"></div></div></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Salt &amp; Static</div><div class="truncate text-xs text-zinc-500">E7 · 38 min left</div></div>
+          <div class="card"><div class="art ph ph-night"><div class="shape left-16 top-8 h-12 w-12 bg-sky-200"></div><div class="absolute bottom-0 left-0 z-10 h-1 w-full bg-white/20"><div class="h-full w-[85%] bg-pink-500"></div></div></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Night Shift at Pier 9</div><div class="truncate text-xs text-zinc-500">Film · 12 min left</div></div>
+          <div class="card"><div class="art ph ph-moss"><div class="shape left-4 bottom-4 h-14 w-36 bg-lime-100"></div><div class="absolute bottom-0 left-0 z-10 h-1 w-full bg-white/20"><div class="h-full w-[45%] bg-pink-500"></div></div></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Wildroot Kitchen</div><div class="truncate text-xs text-zinc-500">S1 · E2 · 17 min left</div></div>
+          <div class="card"><div class="art ph ph-sand"><div class="shape right-10 top-3 h-20 w-20 bg-white"></div><div class="absolute bottom-0 left-0 z-10 h-1 w-full bg-white/20"><div class="h-full w-[12%] bg-pink-500"></div></div></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Dune Radio</div><div class="truncate text-xs text-zinc-500">E1 · 44 min left</div></div>
+          <div class="card"><div class="art ph ph-dusk"><div class="shape left-10 top-10 h-10 w-24 bg-violet-200"></div><div class="absolute bottom-0 left-0 z-10 h-1 w-full bg-white/20"><div class="h-full w-[70%] bg-pink-500"></div></div></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Paper Lanterns</div><div class="truncate text-xs text-zinc-500">S3 · E9 · 9 min left</div></div>
+          <div class="card"><div class="art ph ph-rose"><div class="absolute bottom-0 left-0 z-10 h-1 w-full bg-white/20"><div class="h-full w-[50%] bg-pink-500"></div></div></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Tiny Giants</div><div class="truncate text-xs text-zinc-500">E3 · 25 min left</div></div>
+        </div>
+      </section>
+
+      <!-- Trending clips -->
+      <section>
+        <div class="flex items-baseline justify-between"><h2 class="font-bold text-white">🔥 Trending clips today</h2><span class="truncate text-xs text-zinc-500">See all ›</span></div>
+        <div class="mt-2 flex gap-3">
+          <div class="card"><div class="art ph ph-rose"><span class="absolute left-3 top-1 z-10 text-5xl font-black text-white/90 drop-shadow">1</span><span class="absolute bottom-2 right-2 z-10 rounded bg-black/70 px-1.5 text-[11px] text-white">0:48</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">The rooftop chase, uncut</div><div class="truncate text-xs text-zinc-500">2.4M views · The Glass Meridian</div></div>
+          <div class="card"><div class="art ph ph-cool"><span class="absolute left-3 top-1 z-10 text-5xl font-black text-white/90 drop-shadow">2</span><span class="absolute bottom-2 right-2 z-10 rounded bg-black/70 px-1.5 text-[11px] text-white">1:12</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Chef Ines saves the soufflé</div><div class="truncate text-xs text-zinc-500">1.9M views · Wildroot Kitchen</div></div>
+          <div class="card"><div class="art ph ph-warm"><span class="absolute left-3 top-1 z-10 text-5xl font-black text-white/90 drop-shadow">3</span><span class="absolute bottom-2 right-2 z-10 rounded bg-black/70 px-1.5 text-[11px] text-white">0:31</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Best bloopers of season 3</div><div class="truncate text-xs text-zinc-500">1.2M views · Paper Lanterns</div></div>
+          <div class="card"><div class="art ph ph-green"><span class="absolute left-3 top-1 z-10 text-5xl font-black text-white/90 drop-shadow">4</span><span class="absolute bottom-2 right-2 z-10 rounded bg-black/70 px-1.5 text-[11px] text-white">2:05</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Otter pup's first swim</div><div class="truncate text-xs text-zinc-500">986K views · Tiny Giants</div></div>
+          <div class="card"><div class="art ph ph-ember"><span class="absolute left-3 top-1 z-10 text-5xl font-black text-white/90 drop-shadow">5</span><span class="absolute bottom-2 right-2 z-10 rounded bg-black/70 px-1.5 text-[11px] text-white">0:57</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">That finale twist, explained</div><div class="truncate text-xs text-zinc-500">840K views · Salt &amp; Static</div></div>
+          <div class="card"><div class="art ph ph-night"><span class="absolute left-3 top-1 z-10 text-5xl font-black text-white/90 drop-shadow">6</span><span class="absolute bottom-2 right-2 z-10 rounded bg-black/70 px-1.5 text-[11px] text-white">1:40</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Live set: Harbor Lights</div><div class="truncate text-xs text-zinc-500">612K views · Stream Sessions</div></div>
+          <div class="card"><div class="art ph ph-sand"><span class="absolute left-3 top-1 z-10 text-5xl font-black text-white/90 drop-shadow">7</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Desert storm timelapse</div><div class="truncate text-xs text-zinc-500">540K views · Dune Radio</div></div>
+        </div>
+      </section>
+
+      <!-- New episodes -->
+      <section>
+        <div class="flex items-baseline justify-between"><h2 class="font-bold text-white">New episodes</h2><span class="truncate text-xs text-zinc-500">See all ›</span></div>
+        <div class="mt-2 flex gap-3">
+          <div class="card"><div class="art ph ph-dusk"><span class="absolute left-2 top-2 z-10 rounded bg-pink-600 px-1.5 py-0.5 text-[10px] font-bold text-white">NEW</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Paper Lanterns</div><div class="truncate text-xs text-zinc-500">S3 · E10 “The Last Fold”</div></div>
+          <div class="card"><div class="art ph ph-neon"><span class="absolute left-2 top-2 z-10 rounded bg-pink-600 px-1.5 py-0.5 text-[10px] font-bold text-white">NEW</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">The Glass Meridian</div><div class="truncate text-xs text-zinc-500">S2 · E5 “Borrowed Streets”</div></div>
+          <div class="card"><div class="art ph ph-moss"><span class="absolute left-2 top-2 z-10 rounded bg-pink-600 px-1.5 py-0.5 text-[10px] font-bold text-white">NEW</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Wildroot Kitchen</div><div class="truncate text-xs text-zinc-500">S1 · E6 “Smoke &amp; Citrus”</div></div>
+          <div class="card"><div class="art ph ph-ember"><span class="absolute left-2 top-2 z-10 rounded bg-white px-1.5 py-0.5 text-[10px] font-bold text-black">FRIDAY</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Salt &amp; Static</div><div class="truncate text-xs text-zinc-500">E8 “Low Tide”</div></div>
+          <div class="card"><div class="art ph ph-cool"><span class="absolute left-2 top-2 z-10 rounded bg-pink-600 px-1.5 py-0.5 text-[10px] font-bold text-white">NEW</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Orbit Academy</div><div class="truncate text-xs text-zinc-500">S4 · E1 “Zero-G Finals”</div></div>
+          <div class="card"><div class="art ph ph-warm"><span class="absolute left-2 top-2 z-10 rounded bg-pink-600 px-1.5 py-0.5 text-[10px] font-bold text-white">NEW</span></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Tiny Giants</div><div class="truncate text-xs text-zinc-500">E4 “River Builders”</div></div>
+          <div class="card"><div class="art ph ph-green"></div><div class="mt-1.5 truncate text-[13px] font-semibold text-white">Greenhouse Rivals</div><div class="truncate text-xs text-zinc-500">S2 · E3</div></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

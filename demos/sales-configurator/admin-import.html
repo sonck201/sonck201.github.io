@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contoso Secure · Quote Builder · Imports</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../_base.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <div class="flex h-full">
+      <!-- Sidebar -->
+      <aside class="flex w-64 flex-col bg-slate-900 text-slate-300">
+        <div class="flex items-center gap-2 px-6 py-5">
+          <div class="grid h-8 w-8 place-items-center rounded-lg bg-teal-500 font-extrabold text-white">C</div>
+          <div>
+            <div class="text-sm font-bold text-white">Contoso Secure</div>
+            <div class="text-xs text-slate-400">Quote Builder</div>
+          </div>
+        </div>
+        <nav class="mt-4 space-y-1 px-3 text-sm">
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ New quote</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ My quotes</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ Product catalog</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ Selling rules</a>
+          <a class="flex items-center gap-3 rounded-lg bg-teal-500/15 px-3 py-2 font-semibold text-teal-300">● Imports</a>
+        </nav>
+        <div class="mt-auto border-t border-slate-800 px-6 py-4 text-xs">
+          <div class="font-semibold text-white">Priya Shah</div>
+          <div class="text-slate-400">Catalog Admin · SSO</div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="flex-1 overflow-hidden px-12 py-8">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="text-sm text-slate-500">Admin / Imports</div>
+            <h1 class="mt-1 text-2xl font-bold text-slate-900">Catalog &amp; rules imports</h1>
+            <p class="mt-1 text-slate-500">Upload spreadsheets from product management. Each file is parsed, validated and versioned before it reaches sellers.</p>
+          </div>
+          <button class="rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold">↓ Download templates</button>
+        </div>
+
+        <div class="mt-6 grid grid-cols-3 gap-6">
+          <!-- Drop zone -->
+          <section class="col-span-2 flex flex-col justify-center rounded-2xl border-2 border-dashed border-teal-300 bg-teal-50/50 p-7">
+            <div class="flex items-center gap-6">
+              <div class="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-white text-3xl text-teal-600 shadow-sm">⇪</div>
+              <div class="flex-1">
+                <div class="text-lg font-bold text-slate-900">Drag &amp; drop spreadsheets here</div>
+                <div class="text-sm text-slate-500">.xlsx or .csv up to 25 MB · parser auto-detected from headers</div>
+                <div class="mt-3 flex gap-2 whitespace-nowrap text-xs font-semibold">
+                  <span class="rounded-full bg-white px-3 py-1 text-slate-700 ring-1 ring-slate-200">▦ Products</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-slate-700 ring-1 ring-slate-200">⛓ Constraints</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-slate-700 ring-1 ring-slate-200">$ Pricing rules</span>
+                  <span class="rounded-full bg-white px-3 py-1 text-slate-700 ring-1 ring-slate-200">％ Discounts</span>
+                </div>
+              </div>
+              <button class="whitespace-nowrap rounded-lg bg-teal-600 px-5 py-2.5 font-semibold text-white">Browse files</button>
+            </div>
+            <div class="mt-5 flex items-center gap-2 border-t border-teal-200 pt-4 text-xs font-semibold text-slate-500">
+              <span class="rounded-md bg-white px-2 py-1 text-teal-700 ring-1 ring-teal-200">1 Parse</span><span class="text-slate-300">→</span>
+              <span class="rounded-md bg-white px-2 py-1 text-teal-700 ring-1 ring-teal-200">2 Validate schema &amp; SKUs</span><span class="text-slate-300">→</span>
+              <span class="rounded-md bg-white px-2 py-1 text-teal-700 ring-1 ring-teal-200">3 Diff vs live</span><span class="text-slate-300">→</span>
+              <span class="rounded-md bg-white px-2 py-1 text-teal-700 ring-1 ring-teal-200">4 Publish version</span>
+              <span class="ml-auto font-normal text-slate-400">Rollback anytime</span>
+            </div>
+          </section>
+
+          <!-- Stats -->
+          <aside class="grid grid-cols-2 gap-4">
+            <div class="rounded-2xl border border-slate-200 bg-white p-4">
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Active SKUs</div>
+              <div class="mt-1 text-2xl font-extrabold text-slate-900">1,284</div>
+              <div class="text-xs text-emerald-600">+36 this month</div>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-4">
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Selling rules</div>
+              <div class="mt-1 text-2xl font-extrabold text-slate-900">412</div>
+              <div class="text-xs text-slate-500">v4.2 · live</div>
+            </div>
+            <div class="col-span-2 rounded-2xl bg-slate-900 p-4 text-white">
+              <div class="text-xs uppercase tracking-wide text-slate-400">Last successful import</div>
+              <div class="mt-1 font-semibold">pricebook_2026.3.xlsx</div>
+              <div class="text-xs text-slate-400">Sep 12, 2026 · 2,140 rows · 0 errors</div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- History -->
+        <section class="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div class="flex items-center justify-between border-b border-slate-200 px-6 py-4">
+            <h2 class="font-bold text-slate-900">Import history</h2>
+            <div class="flex gap-2 text-xs font-semibold">
+              <span class="rounded-full bg-slate-900 px-3 py-1 text-white">All</span>
+              <span class="rounded-full border border-slate-300 px-3 py-1 text-slate-600">In progress</span>
+              <span class="rounded-full border border-slate-300 px-3 py-1 text-slate-600">Failed</span>
+            </div>
+          </div>
+          <table class="w-full whitespace-nowrap text-sm">
+            <thead class="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+              <tr>
+                <th class="px-6 py-3 font-semibold">File</th>
+                <th class="px-3 py-3 font-semibold">Parser</th>
+                <th class="px-3 py-3 font-semibold">Owner</th>
+                <th class="px-3 py-3 font-semibold">Started</th>
+                <th class="px-3 py-3 text-right font-semibold">Rows</th>
+                <th class="px-3 py-3 font-semibold">Status</th>
+                <th class="px-6 py-3"></th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="px-6 py-3"><div class="flex items-center gap-3"><span class="grid h-8 w-8 place-items-center rounded-lg bg-emerald-50 text-xs font-bold text-emerald-700">XLS</span><div><div class="font-semibold text-slate-900">discount_matrix_q4.xlsx</div><div class="text-xs text-slate-400">184 KB</div></div></div></td>
+                <td class="px-3 py-3"><span class="rounded-md bg-violet-50 px-2 py-0.5 text-xs font-semibold text-violet-700">％ Discounts</span></td>
+                <td class="px-3 py-3 text-slate-600">Priya Shah</td>
+                <td class="px-3 py-3 text-slate-500">Just now</td>
+                <td class="px-3 py-3 text-right text-slate-400">—</td>
+                <td class="px-3 py-3"><span class="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600"><span class="h-1.5 w-1.5 rounded-full bg-slate-400"></span>Queued</span></td>
+                <td class="px-6 py-3 text-right text-xs font-semibold text-slate-400">Cancel</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3"><div class="flex items-center gap-3"><span class="grid h-8 w-8 place-items-center rounded-lg bg-emerald-50 text-xs font-bold text-emerald-700">XLS</span><div><div class="font-semibold text-slate-900">product_catalog_sase_v7.xlsx</div><div class="text-xs text-slate-400">2.4 MB</div></div></div></td>
+                <td class="px-3 py-3"><span class="rounded-md bg-teal-50 px-2 py-0.5 text-xs font-semibold text-teal-700">▦ Products</span></td>
+                <td class="px-3 py-3 text-slate-600">Priya Shah</td>
+                <td class="px-3 py-3 text-slate-500">2 min ago</td>
+                <td class="px-3 py-3 text-right text-slate-600">1,318</td>
+                <td class="px-3 py-3">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-700"><span class="h-1.5 w-1.5 animate-pulse rounded-full bg-sky-500"></span>Processing</span>
+                    <div class="h-1.5 w-16 rounded-full bg-slate-200"><div class="h-1.5 w-[64%] rounded-full bg-sky-500"></div></div>
+                    <span class="text-xs text-slate-500">64%</span>
+                  </div>
+                </td>
+                <td class="px-6 py-3 text-right text-xs font-semibold text-teal-700">Log</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3"><div class="flex items-center gap-3"><span class="grid h-8 w-8 place-items-center rounded-lg bg-slate-100 text-xs font-bold text-slate-600">CSV</span><div><div class="font-semibold text-slate-900">compat_constraints_2026-09.csv</div><div class="text-xs text-slate-400">96 KB</div></div></div></td>
+                <td class="px-3 py-3"><span class="rounded-md bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700">⛓ Constraints</span></td>
+                <td class="px-3 py-3 text-slate-600">Daniel Reyes</td>
+                <td class="px-3 py-3 text-slate-500">Today 09:14</td>
+                <td class="px-3 py-3 text-right text-slate-600">412</td>
+                <td class="px-3 py-3"><span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">✓ Completed</span></td>
+                <td class="px-6 py-3 text-right text-xs font-semibold text-teal-700">Diff</td>
+              </tr>
+              <tr class="bg-rose-50/40">
+                <td class="px-6 py-3"><div class="flex items-center gap-3"><span class="grid h-8 w-8 place-items-center rounded-lg bg-emerald-50 text-xs font-bold text-emerald-700">XLS</span><div><div class="font-semibold text-slate-900">pricing_rules_emea.xlsx</div><div class="text-xs text-rose-600">Unknown SKU at row 88 · +11</div></div></div></td>
+                <td class="px-3 py-3"><span class="rounded-md bg-sky-50 px-2 py-0.5 text-xs font-semibold text-sky-700">$ Pricing rules</span></td>
+                <td class="px-3 py-3 text-slate-600">Daniel Reyes</td>
+                <td class="px-3 py-3 text-slate-500">Yesterday</td>
+                <td class="px-3 py-3 text-right text-slate-600">206</td>
+                <td class="px-3 py-3"><span class="inline-flex items-center gap-1.5 rounded-full bg-rose-100 px-2.5 py-0.5 text-xs font-semibold text-rose-700">✕ Failed · 12 errors</span></td>
+                <td class="px-6 py-3 text-right text-xs font-semibold text-rose-700">Report</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3"><div class="flex items-center gap-3"><span class="grid h-8 w-8 place-items-center rounded-lg bg-emerald-50 text-xs font-bold text-emerald-700">XLS</span><div><div class="font-semibold text-slate-900">pricebook_2026.3.xlsx</div><div class="text-xs text-slate-400">3.1 MB</div></div></div></td>
+                <td class="px-3 py-3"><span class="rounded-md bg-sky-50 px-2 py-0.5 text-xs font-semibold text-sky-700">$ Pricing rules</span></td>
+                <td class="px-3 py-3 text-slate-600">Priya Shah</td>
+                <td class="px-3 py-3 text-slate-500">Sep 12, 2026</td>
+                <td class="px-3 py-3 text-right text-slate-600">2,140</td>
+                <td class="px-3 py-3"><span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">✓ Completed</span></td>
+                <td class="px-6 py-3 text-right text-xs font-semibold text-teal-700">Diff</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3"><div class="flex items-center gap-3"><span class="grid h-8 w-8 place-items-center rounded-lg bg-slate-100 text-xs font-bold text-slate-600">CSV</span><div><div class="font-semibold text-slate-900">partner_discounts_tier2.csv</div><div class="text-xs text-slate-400">41 KB</div></div></div></td>
+                <td class="px-3 py-3"><span class="rounded-md bg-violet-50 px-2 py-0.5 text-xs font-semibold text-violet-700">％ Discounts</span></td>
+                <td class="px-3 py-3 text-slate-600">Mei Tanaka</td>
+                <td class="px-3 py-3 text-slate-500">Sep 10, 2026</td>
+                <td class="px-3 py-3 text-right text-slate-600">88</td>
+                <td class="px-3 py-3"><span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">✓ Completed</span></td>
+                <td class="px-6 py-3 text-right text-xs font-semibold text-teal-700">Diff</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contoso Secure · Quote Builder · Questionnaire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../_base.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <div class="flex h-full">
+      <!-- Sidebar -->
+      <aside class="flex w-64 flex-col bg-slate-900 text-slate-300">
+        <div class="flex items-center gap-2 px-6 py-5">
+          <div class="grid h-8 w-8 place-items-center rounded-lg bg-teal-500 font-extrabold text-white">C</div>
+          <div>
+            <div class="text-sm font-bold text-white">Contoso Secure</div>
+            <div class="text-xs text-slate-400">Quote Builder</div>
+          </div>
+        </div>
+        <nav class="mt-4 space-y-1 px-3 text-sm">
+          <a class="flex items-center gap-3 rounded-lg bg-teal-500/15 px-3 py-2 font-semibold text-teal-300">● New quote</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ My quotes</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ Product catalog</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ Selling rules</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">○ Imports</a>
+        </nav>
+        <div class="mt-auto border-t border-slate-800 px-6 py-4 text-xs">
+          <div class="font-semibold text-white">Alex Morgan</div>
+          <div class="text-slate-400">Account Executive · SSO</div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="flex-1 overflow-hidden px-12 py-8">
+        <div class="text-sm text-slate-500">Quotes / New quote</div>
+        <h1 class="mt-1 text-2xl font-bold text-slate-900">Tell us about the customer</h1>
+        <p class="mt-1 text-slate-500">Answer a few questions. We'll recommend a bundle that follows every selling rule.</p>
+
+        <!-- Stepper -->
+        <ol class="mt-8 flex items-center gap-3 text-sm">
+          <li class="flex items-center gap-2 font-semibold text-teal-700">
+            <span class="grid h-7 w-7 place-items-center rounded-full bg-teal-600 text-white">✓</span>Company
+          </li>
+          <li class="h-px w-12 bg-teal-600"></li>
+          <li class="flex items-center gap-2 font-semibold text-teal-700">
+            <span class="grid h-7 w-7 place-items-center rounded-full bg-teal-600 text-white">2</span>Users &amp; sites
+          </li>
+          <li class="h-px w-12 bg-slate-300"></li>
+          <li class="flex items-center gap-2 text-slate-400">
+            <span class="grid h-7 w-7 place-items-center rounded-full border border-slate-300">3</span>Security needs
+          </li>
+          <li class="h-px w-12 bg-slate-300"></li>
+          <li class="flex items-center gap-2 text-slate-400">
+            <span class="grid h-7 w-7 place-items-center rounded-full border border-slate-300">4</span>Review
+          </li>
+        </ol>
+
+        <div class="mt-8 grid grid-cols-3 gap-8">
+          <!-- Form -->
+          <section class="col-span-2 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <h2 class="font-bold text-slate-900">Users &amp; sites</h2>
+
+            <label class="mt-6 block text-sm font-semibold">How many users need protection?</label>
+            <div class="mt-3 flex items-center gap-4">
+              <div class="relative h-2 flex-1 rounded-full bg-slate-200">
+                <div class="absolute inset-y-0 left-0 w-3/5 rounded-full bg-teal-500"></div>
+                <div class="absolute -top-1.5 left-[60%] h-5 w-5 -translate-x-1/2 rounded-full border-4 border-white bg-teal-600 shadow"></div>
+              </div>
+              <div class="w-28 rounded-lg border border-slate-300 px-3 py-2 text-right font-semibold">2,500</div>
+            </div>
+
+            <label class="mt-8 block text-sm font-semibold">Where do they work?</label>
+            <div class="mt-3 grid grid-cols-3 gap-3">
+              <div class="rounded-xl border-2 border-teal-500 bg-teal-50 p-4">
+                <div class="font-semibold text-teal-800">Offices</div>
+                <div class="text-xs text-teal-700">12 branch sites</div>
+              </div>
+              <div class="rounded-xl border-2 border-teal-500 bg-teal-50 p-4">
+                <div class="font-semibold text-teal-800">Remote</div>
+                <div class="text-xs text-teal-700">~40% of users</div>
+              </div>
+              <div class="rounded-xl border border-slate-200 p-4">
+                <div class="font-semibold">Data centers</div>
+                <div class="text-xs text-slate-500">Not selected</div>
+              </div>
+            </div>
+
+            <label class="mt-8 block text-sm font-semibold">Regions</label>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="rounded-full bg-slate-900 px-3 py-1 text-sm text-white">North America</span>
+              <span class="rounded-full bg-slate-900 px-3 py-1 text-sm text-white">Europe</span>
+              <span class="rounded-full border border-slate-300 px-3 py-1 text-sm">Asia Pacific</span>
+              <span class="rounded-full border border-slate-300 px-3 py-1 text-sm">Latin America</span>
+            </div>
+
+            <div class="mt-10 flex justify-between">
+              <button class="rounded-lg border border-slate-300 px-5 py-2.5 font-semibold">Back</button>
+              <button class="rounded-lg bg-teal-600 px-6 py-2.5 font-semibold text-white">Continue</button>
+            </div>
+          </section>
+
+          <!-- Live summary -->
+          <aside class="space-y-4">
+            <div class="rounded-2xl bg-slate-900 p-6 text-white">
+              <div class="text-xs uppercase tracking-wide text-slate-400">Live estimate</div>
+              <div class="mt-2 text-3xl font-extrabold">$184,200</div>
+              <div class="text-sm text-slate-400">per year · before discounts</div>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6">
+              <div class="flex items-center gap-2 text-sm font-semibold text-violet-700">✦ AI suggestion</div>
+              <p class="mt-2 text-sm text-slate-600">
+                With 12 branches and a large remote workforce, customers like this usually add
+                <b>Secure Web Gateway</b> and <b>Zero Trust Access</b>.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-sm text-emerald-800">
+              ✓ All selling rules satisfied
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

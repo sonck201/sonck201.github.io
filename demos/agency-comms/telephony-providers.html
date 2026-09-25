@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tailspin Agency Hub · Settings · Telephony</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../_base.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <div class="flex h-full">
+      <!-- Sidebar -->
+      <aside class="flex w-60 shrink-0 flex-col bg-indigo-950 text-indigo-200">
+        <div class="flex items-center gap-2 px-5 py-5">
+          <div class="grid h-8 w-8 place-items-center rounded-lg bg-indigo-500 font-extrabold text-white">T</div>
+          <div>
+            <div class="text-sm font-bold text-white">Tailspin</div>
+            <div class="text-xs text-indigo-300">Agency Hub</div>
+          </div>
+        </div>
+        <nav class="mt-2 space-y-1 px-3 text-sm">
+          <a class="flex items-center justify-between rounded-lg px-3 py-2"><span>✉ Inbox</span><span class="rounded-full bg-indigo-500 px-2 text-xs text-white">14</span></a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">☎ Calls</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">💬 Texts</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">📠 Fax</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">✍ E-sign</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">👥 Clients</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">📊 Reports</a>
+          <a class="flex items-center gap-3 rounded-lg bg-indigo-500/20 px-3 py-2 font-semibold text-white">⚙ Settings</a>
+        </nav>
+        <div class="mt-4 space-y-0.5 border-l border-indigo-800 ml-8 pl-3 text-xs">
+          <div class="py-1">Agency profile</div>
+          <div class="py-1">Users &amp; roles</div>
+          <div class="py-1 font-semibold text-white">Telephony</div>
+          <div class="py-1">Messaging &amp; fax</div>
+          <div class="py-1">AMS &amp; CRM sync</div>
+          <div class="py-1">Compliance</div>
+        </div>
+        <div class="mt-auto flex items-center gap-3 border-t border-indigo-900 px-5 py-4 text-xs">
+          <div class="grid h-8 w-8 place-items-center rounded-full bg-indigo-400 font-bold text-white">RP</div>
+          <div>
+            <div class="font-semibold text-white">Riley Park</div>
+            <div class="text-indigo-300">Agency Admin</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="flex-1 overflow-hidden px-10 py-7">
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="text-sm text-slate-500">Settings / Telephony</div>
+            <h1 class="mt-1 text-2xl font-bold text-slate-900">Telephony providers</h1>
+            <p class="mt-1 text-slate-500">Plug in any VoIP provider. Calls, SMS and recordings flow through one telephony layer; the rest of the hub never changes.</p>
+          </div>
+          <button class="whitespace-nowrap rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white">+ Add provider</button>
+        </div>
+
+        <!-- Architecture strip -->
+        <section class="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div class="grid grid-cols-5 gap-2 text-xs font-semibold">
+            <div class="rounded-lg bg-slate-100 px-3 py-2 text-center text-slate-600">✉ Unified inbox</div>
+            <div class="rounded-lg bg-slate-100 px-3 py-2 text-center text-slate-600">☎ Click-to-call</div>
+            <div class="rounded-lg bg-slate-100 px-3 py-2 text-center text-slate-600">● Call recording</div>
+            <div class="rounded-lg bg-slate-100 px-3 py-2 text-center text-slate-600">💬 Business SMS</div>
+            <div class="rounded-lg bg-slate-100 px-3 py-2 text-center text-slate-600">⇄ AMS call logging</div>
+          </div>
+          <div class="my-2 text-center text-xs text-slate-300">▼ ▼ ▼</div>
+          <div class="flex items-center justify-between rounded-xl bg-indigo-600 px-5 py-3 text-white">
+            <div class="font-bold">Tailspin Telephony Layer</div>
+            <div class="flex gap-2 font-mono text-[11px]">
+              <span class="rounded bg-white/15 px-2 py-0.5">placeCall()</span>
+              <span class="rounded bg-white/15 px-2 py-0.5">sendSms()</span>
+              <span class="rounded bg-white/15 px-2 py-0.5">onCallEvent()</span>
+              <span class="rounded bg-white/15 px-2 py-0.5">getRecording()</span>
+              <span class="rounded bg-white/15 px-2 py-0.5">presence()</span>
+            </div>
+          </div>
+          <div class="my-2 grid grid-cols-3 text-center text-xs text-slate-300"><span>▼</span><span>▼</span><span>▼</span></div>
+          <div class="grid grid-cols-3 gap-3 text-xs font-semibold">
+            <div class="rounded-lg border-2 border-indigo-200 bg-indigo-50 px-3 py-2 text-center text-indigo-800">⧉ Legacy PBX adapter · SIP</div>
+            <div class="rounded-lg border-2 border-indigo-200 bg-indigo-50 px-3 py-2 text-center text-indigo-800">⧉ RingCentral adapter · REST + webhooks</div>
+            <div class="rounded-lg border-2 border-dashed border-slate-300 px-3 py-2 text-center text-slate-400">＋ Your next provider</div>
+          </div>
+        </section>
+
+        <div class="mt-5 grid grid-cols-3 gap-5">
+          <!-- Provider cards -->
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div class="grid h-10 w-10 place-items-center rounded-xl bg-slate-800 text-lg text-white">☏</div>
+                <div>
+                  <div class="font-bold text-slate-900">Legacy PBX</div>
+                  <div class="text-xs text-slate-500">On-prem · SIP trunk</div>
+                </div>
+              </div>
+              <span class="inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>Degraded</span>
+            </div>
+            <dl class="mt-4 grid grid-cols-3 gap-2 text-center">
+              <div class="rounded-lg bg-slate-50 py-2"><dt class="text-[11px] text-slate-400">Numbers</dt><dd class="font-bold">18</dd></div>
+              <div class="rounded-lg bg-slate-50 py-2"><dt class="text-[11px] text-slate-400">Latency</dt><dd class="font-bold text-amber-600">212 ms</dd></div>
+              <div class="rounded-lg bg-slate-50 py-2"><dt class="text-[11px] text-slate-400">Uptime 30d</dt><dd class="font-bold">99.2%</dd></div>
+            </dl>
+            <div class="mt-3 flex flex-wrap gap-1.5 text-[11px]">
+              <span class="rounded bg-slate-100 px-1.5 py-0.5 text-slate-600">✓ Voice</span>
+              <span class="rounded bg-slate-100 px-1.5 py-0.5 text-slate-600">✓ Recording</span>
+              <span class="rounded bg-slate-100 px-1.5 py-0.5 text-slate-400 line-through">SMS</span>
+              <span class="rounded bg-slate-100 px-1.5 py-0.5 text-slate-600">✓ Fax</span>
+            </div>
+            <div class="mt-3 text-xs text-amber-700">Jitter above threshold on trunk 2 · since 10:05</div>
+          </div>
+
+          <div class="rounded-2xl border-2 border-indigo-500 bg-white p-5 shadow-sm">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div class="grid h-10 w-10 place-items-center rounded-xl bg-orange-500 text-lg text-white">☁</div>
+                <div>
+                  <div class="font-bold text-slate-900">RingCentral</div>
+                  <div class="text-xs text-slate-500">Cloud · OAuth connected</div>
+                </div>
+              </div>
+              <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>Healthy</span>
+            </div>
+            <dl class="mt-4 grid grid-cols-3 gap-2 text-center">
+              <div class="rounded-lg bg-slate-50 py-2"><dt class="text-[11px] text-slate-400">Numbers</dt><dd class="font-bold">42</dd></div>
+              <div class="rounded-lg bg-slate-50 py-2"><dt class="text-[11px] text-slate-400">Latency</dt><dd class="font-bold text-emerald-600">48 ms</dd></div>
+              <div class="rounded-lg bg-slate-50 py-2"><dt class="text-[11px] text-slate-400">Uptime 30d</dt><dd class="font-bold">99.98%</dd></div>
+            </dl>
+            <div class="mt-3 flex flex-wrap gap-1.5 text-[11px]">
+              <span class="rounded bg-slate-100 px-1.5 py-0.5 text-slate-600">✓ Voice</span>
+              <span class="rounded bg-slate-100 px-1.5 py-0.5 text-slate-600">✓ Recording</span>
+              <span class="rounded bg-slate-100 px-1.5 py-0.5 text-slate-600">✓ SMS</span>
+              <span class="rounded bg-slate-100 px-1.5 py-0.5 text-slate-600">✓ Presence</span>
+            </div>
+            <div class="mt-3 text-xs text-indigo-700">★ Agency default · 3 of 4 offices</div>
+          </div>
+
+          <div class="grid place-items-center rounded-2xl border-2 border-dashed border-slate-300 bg-white/60 p-5 text-center">
+            <div>
+              <div class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-indigo-50 text-2xl text-indigo-600">＋</div>
+              <div class="mt-3 font-bold text-slate-900">Add provider</div>
+              <p class="mt-1 text-xs text-slate-500">Choose an adapter, authenticate, map numbers. No changes to inbox, workflows or reports.</p>
+              <button class="mt-3 rounded-lg border border-indigo-300 px-3 py-1.5 text-xs font-semibold text-indigo-700">Browse adapters</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Routing -->
+        <section class="mt-5 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div class="flex items-center justify-between border-b border-slate-200 px-5 py-3">
+            <h2 class="font-bold text-slate-900">Offices &amp; number routing</h2>
+            <span class="text-xs text-slate-500">Changes apply instantly · failover to agency default</span>
+          </div>
+          <table class="w-full whitespace-nowrap text-sm">
+            <thead class="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+              <tr>
+                <th class="px-5 py-2.5 font-semibold">Office</th>
+                <th class="px-3 py-2.5 font-semibold">Number</th>
+                <th class="px-3 py-2.5 font-semibold">Routes to</th>
+                <th class="px-3 py-2.5 font-semibold">Default provider</th>
+                <th class="px-3 py-2.5 font-semibold">Failover</th>
+                <th class="px-5 py-2.5 font-semibold">Health</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="px-5 py-2.5 font-semibold text-slate-900">Riverside (HQ)</td>
+                <td class="px-3 py-2.5 font-mono text-xs">(555) 301-4400</td>
+                <td class="px-3 py-2.5 text-slate-600">Main IVR → Personal lines queue</td>
+                <td class="px-3 py-2.5"><span class="rounded-md border border-slate-300 px-2 py-0.5 text-xs font-semibold">RingCentral ▾</span></td>
+                <td class="px-3 py-2.5 text-xs text-slate-500">Legacy PBX</td>
+                <td class="px-5 py-2.5"><span class="text-xs font-semibold text-emerald-600">● Healthy</span></td>
+              </tr>
+              <tr>
+                <td class="px-5 py-2.5 font-semibold text-slate-900">Riverside (HQ)</td>
+                <td class="px-3 py-2.5 font-mono text-xs">(555) 301-4455</td>
+                <td class="px-3 py-2.5 text-slate-600">Claims desk · ring group</td>
+                <td class="px-3 py-2.5"><span class="rounded-md border border-slate-300 px-2 py-0.5 text-xs font-semibold">RingCentral ▾</span></td>
+                <td class="px-3 py-2.5 text-xs text-slate-500">Legacy PBX</td>
+                <td class="px-5 py-2.5"><span class="text-xs font-semibold text-emerald-600">● Healthy</span></td>
+              </tr>
+              <tr>
+                <td class="px-5 py-2.5 font-semibold text-slate-900">Lakeview branch</td>
+                <td class="px-3 py-2.5 font-mono text-xs">(555) 482-1190</td>
+                <td class="px-3 py-2.5 text-slate-600">Commercial lines queue</td>
+                <td class="px-3 py-2.5"><span class="rounded-md border border-slate-300 px-2 py-0.5 text-xs font-semibold">Legacy PBX ▾</span></td>
+                <td class="px-3 py-2.5 text-xs text-slate-500">RingCentral</td>
+                <td class="px-5 py-2.5"><span class="text-xs font-semibold text-amber-600">● Degraded · failover armed</span></td>
+              </tr>
+              <tr>
+                <td class="px-5 py-2.5 font-semibold text-slate-900">Hillcrest branch</td>
+                <td class="px-3 py-2.5 font-mono text-xs">(555) 617-3302</td>
+                <td class="px-3 py-2.5 text-slate-600">Direct → Jordan Casey</td>
+                <td class="px-3 py-2.5"><span class="rounded-md border border-slate-300 px-2 py-0.5 text-xs font-semibold">RingCentral ▾</span></td>
+                <td class="px-3 py-2.5 text-xs text-slate-400">None</td>
+                <td class="px-5 py-2.5"><span class="text-xs font-semibold text-emerald-600">● Healthy</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fabrikam DeviceLab · Device lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../_base.css" />
+    <style>
+      .phone { position: relative; border-radius: 14px; border: 3px solid #3f3f46; background: #0b0f0d; }
+      .phone::before { content: ''; position: absolute; top: 4px; left: 50%; width: 30%; height: 4px; transform: translateX(-50%); border-radius: 4px; background: #27272a; }
+      .phone .scr { position: absolute; inset: 12px 4px 6px; border-radius: 6px; }
+      .tab { border-radius: 10px; }
+      .tab::before { width: 6px; height: 6px; top: 4px; border-radius: 9999px; }
+    </style>
+  </head>
+  <body class="bg-zinc-950 text-zinc-300">
+    <div class="flex h-full">
+      <!-- Sidebar -->
+      <aside class="flex w-60 flex-col border-r border-zinc-800 bg-black/60">
+        <div class="flex items-center gap-2 px-5 py-5">
+          <div class="grid h-8 w-8 place-items-center rounded-lg bg-lime-400 font-extrabold text-black">F</div>
+          <div>
+            <div class="text-sm font-bold text-white">Fabrikam DeviceLab</div>
+            <div class="text-xs text-zinc-500">Real-device cloud</div>
+          </div>
+        </div>
+        <nav class="mt-3 space-y-1 px-3 text-sm">
+          <a class="flex items-center gap-3 rounded-lg bg-lime-400/10 px-3 py-2 font-semibold text-lime-300">▦ Device lab</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">▶ Live sessions</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">✓ Test runs</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">⬒ App builds</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">◷ Reservations</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">⚙ Integrations</a>
+        </nav>
+        <div class="mx-4 mt-6 rounded-xl border border-zinc-800 bg-zinc-900/60 p-4 text-xs">
+          <div class="font-semibold text-zinc-200">Parallel slots</div>
+          <div class="mt-2 flex items-baseline gap-1"><span class="text-xl font-bold text-white">18</span><span class="text-zinc-500">/ 25 in use</span></div>
+          <div class="mt-2 h-1.5 rounded-full bg-zinc-800"><div class="h-full w-[72%] rounded-full bg-lime-400"></div></div>
+        </div>
+        <div class="mt-auto border-t border-zinc-800 px-5 py-4 text-xs">
+          <div class="font-semibold text-white">Priya Raman</div>
+          <div class="text-zinc-500">QA Lead · Mobile Squad</div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="flex-1 overflow-hidden px-10 py-6">
+        <div class="flex items-end justify-between">
+          <div>
+            <div class="text-sm text-zinc-500">Workspace / Device lab</div>
+            <h1 class="mt-1 text-2xl font-bold text-white">Device lab</h1>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex w-72 items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-zinc-500">⌕ Search model, serial, tag…</div>
+            <button class="rounded-lg border border-zinc-700 px-4 py-2 text-sm font-semibold text-zinc-200">Reserve</button>
+            <button class="rounded-lg bg-lime-400 px-4 py-2 text-sm font-semibold text-black">+ Start live session</button>
+          </div>
+        </div>
+
+        <!-- KPIs -->
+        <div class="mt-5 grid grid-cols-4 gap-4">
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Devices online</div>
+            <div class="mt-1 flex items-baseline gap-2"><span class="text-2xl font-bold text-white">142</span><span class="text-xs text-zinc-500">of 156</span></div>
+            <div class="mt-2 text-xs text-lime-400">▲ 6 added this week</div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Utilization (7d)</div>
+            <div class="mt-1 text-2xl font-bold text-white">68.4%</div>
+            <svg viewBox="0 0 120 24" class="mt-1 h-6 w-full"><polyline fill="none" stroke="#a3e635" stroke-width="2" points="0,18 15,14 30,16 45,10 60,12 75,7 90,9 105,5 120,6" /></svg>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Sessions today</div>
+            <div class="mt-1 text-2xl font-bold text-white">1,284</div>
+            <div class="mt-2 text-xs text-zinc-500">312 manual · 972 automated</div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Avg. queue wait</div>
+            <div class="mt-1 text-2xl font-bold text-white">42 s</div>
+            <div class="mt-2 text-xs text-lime-400">▼ 18% vs last week</div>
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="mt-5 flex items-center justify-between text-sm">
+          <div class="flex items-center gap-2">
+            <span class="rounded-full bg-lime-400 px-3 py-1 font-semibold text-black">All OS</span>
+            <span class="rounded-full border border-zinc-700 px-3 py-1"> iOS · 58</span>
+            <span class="rounded-full border border-zinc-700 px-3 py-1">🤖 Android · 98</span>
+            <span class="mx-2 h-5 w-px bg-zinc-800"></span>
+            <span class="rounded-full border border-lime-400/60 bg-lime-400/10 px-3 py-1 text-lime-300">📍 Lab A · Singapore</span>
+            <span class="rounded-full border border-zinc-700 px-3 py-1">📍 Lab B · Frankfurt</span>
+            <span class="rounded-full border border-zinc-700 px-3 py-1">Form factor ▾</span>
+          </div>
+          <div class="flex items-center gap-4 text-xs text-zinc-400">
+            <span><span class="mr-1 inline-block h-2 w-2 rounded-full bg-lime-400"></span>Available 64</span>
+            <span><span class="mr-1 inline-block h-2 w-2 rounded-full bg-sky-400"></span>In use 61</span>
+            <span><span class="mr-1 inline-block h-2 w-2 rounded-full bg-amber-400"></span>Charging 17</span>
+            <span><span class="mr-1 inline-block h-2 w-2 rounded-full bg-zinc-600"></span>Offline 14</span>
+          </div>
+        </div>
+
+        <!-- Device grid -->
+        <div class="mt-4 grid grid-cols-6 gap-4">
+          <!-- card template repeated -->
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr ph ph-green"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Phone Pro 15</div>
+            <div class="text-xs text-zinc-500">iOS 18.2 · SG-A-014</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-lime-400/15 px-2 py-0.5 font-semibold text-lime-300">● Available</span><span class="text-zinc-500">🔋 96%</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr ph ph-cool"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Nova S24</div>
+            <div class="text-xs text-zinc-500">Android 15 · SG-A-022</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-sky-400/15 px-2 py-0.5 font-semibold text-sky-300">In use · Minh T.</span><span class="text-zinc-500">24m</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone tab h-24 w-20"><div class="scr ph ph-dusk"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Tab Air 11</div>
+            <div class="text-xs text-zinc-500">iPadOS 18.1 · SG-A-031</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-lime-400/15 px-2 py-0.5 font-semibold text-lime-300">● Available</span><span class="text-zinc-500">🔋 88%</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr bg-amber-400/20"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Aero 9 Lite</div>
+            <div class="text-xs text-zinc-500">Android 14 · SG-A-007</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-amber-400/15 px-2 py-0.5 font-semibold text-amber-300">⚡ Charging</span><span class="text-zinc-500">🔋 34%</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr ph ph-rose"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Phone 14 Mini</div>
+            <div class="text-xs text-zinc-500">iOS 17.6 · SG-A-019</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-sky-400/15 px-2 py-0.5 font-semibold text-sky-300">In use · CI #4821</span><span class="text-zinc-500">3m</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 opacity-70">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr bg-zinc-900"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Orbit X5 Fold</div>
+            <div class="text-xs text-zinc-500">Android 14 · SG-A-040</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-zinc-700/60 px-2 py-0.5 font-semibold text-zinc-400">○ Offline</span><span class="text-zinc-500">USB fault</span>
+            </div>
+          </div>
+
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr ph ph-warm"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Nova A55</div>
+            <div class="text-xs text-zinc-500">Android 14 · SG-A-051</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-sky-400/15 px-2 py-0.5 font-semibold text-sky-300">In use · Lena K.</span><span class="text-zinc-500">51m</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr ph ph-cool"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Phone Pro 15 Max</div>
+            <div class="text-xs text-zinc-500">iOS 18.2 · SG-A-015</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-lime-400/15 px-2 py-0.5 font-semibold text-lime-300">● Available</span><span class="text-zinc-500">🔋 100%</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr ph ph-green"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Zephyr 12T</div>
+            <div class="text-xs text-zinc-500">Android 13 · SG-A-063</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-lime-400/15 px-2 py-0.5 font-semibold text-lime-300">● Available</span><span class="text-zinc-500">🔋 79%</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone tab h-24 w-20"><div class="scr ph ph-warm"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Nova Tab S9</div>
+            <div class="text-xs text-zinc-500">Android 14 · SG-A-072</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-sky-400/15 px-2 py-0.5 font-semibold text-sky-300">In use · Arjun P.</span><span class="text-zinc-500">12m</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr bg-amber-400/20"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Phone SE 3</div>
+            <div class="text-xs text-zinc-500">iOS 16.7 · SG-A-003</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-amber-400/15 px-2 py-0.5 font-semibold text-amber-300">⚡ Charging</span><span class="text-zinc-500">🔋 58%</span>
+            </div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex justify-center"><div class="phone h-24 w-14"><div class="scr ph ph-dusk"></div></div></div>
+            <div class="mt-3 text-sm font-semibold text-white">Aero 9 Pro</div>
+            <div class="text-xs text-zinc-500">Android 15 · SG-A-028</div>
+            <div class="mt-3 flex items-center justify-between text-xs">
+              <span class="rounded-full bg-sky-400/15 px-2 py-0.5 font-semibold text-sky-300">In use · CI #4822</span><span class="text-zinc-500">7m</span>
+            </div>
+          </div>
+        </div>
+        <!-- Lab health -->
+        <div class="mt-4 grid grid-cols-3 gap-4">
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex items-center justify-between text-sm"><span class="font-semibold text-white">Lab A · Singapore</span><span class="text-xs text-lime-400">● Healthy</span></div>
+            <div class="mt-3 flex items-end gap-1.5">
+              <div class="h-6 flex-1 rounded-sm bg-lime-400/80"></div><div class="h-9 flex-1 rounded-sm bg-lime-400/80"></div><div class="h-7 flex-1 rounded-sm bg-lime-400/80"></div><div class="h-10 flex-1 rounded-sm bg-lime-400"></div><div class="h-8 flex-1 rounded-sm bg-lime-400/80"></div><div class="h-5 flex-1 rounded-sm bg-lime-400/60"></div><div class="h-9 flex-1 rounded-sm bg-lime-400/80"></div><div class="h-10 flex-1 rounded-sm bg-lime-400"></div>
+            </div>
+            <div class="mt-2 text-xs text-zinc-500">8 racks · 84 devices · 72% busy · 23.1 °C</div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4">
+            <div class="flex items-center justify-between text-sm"><span class="font-semibold text-white">Lab B · Frankfurt</span><span class="text-xs text-amber-300">● 2 USB hubs degraded</span></div>
+            <div class="mt-3 flex items-end gap-1.5">
+              <div class="h-8 flex-1 rounded-sm bg-lime-400/80"></div><div class="h-5 flex-1 rounded-sm bg-lime-400/60"></div><div class="h-3 flex-1 rounded-sm bg-amber-400/80"></div><div class="h-7 flex-1 rounded-sm bg-lime-400/80"></div><div class="h-4 flex-1 rounded-sm bg-amber-400/80"></div><div class="h-9 flex-1 rounded-sm bg-lime-400"></div>
+            </div>
+            <div class="mt-2 text-xs text-zinc-500">6 racks · 72 devices · 61% busy · 22.4 °C</div>
+          </div>
+          <div class="rounded-xl border border-zinc-800 bg-zinc-900/70 p-4 text-xs">
+            <div class="text-sm font-semibold text-white">Recent activity</div>
+            <div class="mt-2 space-y-1.5 text-zinc-400">
+              <div><span class="text-lime-400">●</span> CI #4822 acquired 9 devices · <span class="text-zinc-600">2m ago</span></div>
+              <div><span class="text-sky-400">●</span> Lena K. started session on Nova A55 · <span class="text-zinc-600">51m ago</span></div>
+              <div><span class="text-zinc-500">●</span> Orbit X5 Fold went offline (USB fault) · <span class="text-zinc-600">1h ago</span></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

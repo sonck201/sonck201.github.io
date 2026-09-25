@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Woodgrove Homes · Search · Map</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../_base.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <div class="flex h-full flex-col">
+      <!-- Top bar -->
+      <header class="flex items-center gap-6 border-b border-slate-200 bg-white px-8 py-3">
+        <div class="flex items-center gap-2">
+          <div class="grid h-9 w-9 place-items-center rounded-lg bg-orange-500 text-lg font-extrabold text-white">W</div>
+          <div>
+            <div class="text-sm font-bold leading-tight text-slate-900">Woodgrove Homes</div>
+            <div class="text-[11px] text-slate-500">Homes across Japan</div>
+          </div>
+        </div>
+        <div class="flex flex-1 items-center rounded-xl border border-slate-300 bg-white shadow-sm">
+          <div class="flex flex-1 items-center gap-2 px-4 py-2.5 text-sm">
+            <span class="text-slate-400">⌕</span>
+            <span class="font-medium text-slate-900">Setagaya, Tokyo</span>
+            <span class="rounded-full bg-orange-50 px-2 py-0.5 text-xs font-semibold text-orange-700">Den-en-toshi Line ×</span>
+            <span class="rounded-full bg-orange-50 px-2 py-0.5 text-xs font-semibold text-orange-700">Odakyu Line ×</span>
+          </div>
+          <div class="border-l border-slate-200 px-4 py-2.5 text-sm text-slate-500">Station, ward, or keyword</div>
+          <button class="m-1 rounded-lg bg-orange-500 px-5 py-2 text-sm font-semibold text-white">Search</button>
+        </div>
+        <nav class="flex items-center gap-5 text-sm font-medium text-slate-600">
+          <a>Sell</a><a>Assessment</a><a>♡ Saved (8)</a>
+          <div class="grid h-8 w-8 place-items-center rounded-full bg-slate-800 text-xs font-bold text-white">KT</div>
+        </nav>
+      </header>
+
+      <!-- Category tabs -->
+      <div class="flex items-center gap-1 border-b border-slate-200 bg-white px-8 text-sm">
+        <a class="border-b-2 border-transparent px-4 py-3 text-slate-500">New condo</a>
+        <a class="border-b-2 border-orange-500 px-4 py-3 font-semibold text-orange-600">Used condo</a>
+        <a class="border-b-2 border-transparent px-4 py-3 text-slate-500">New house</a>
+        <a class="border-b-2 border-transparent px-4 py-3 text-slate-500">Used house</a>
+        <a class="border-b-2 border-transparent px-4 py-3 text-slate-500">Rental</a>
+        <a class="border-b-2 border-transparent px-4 py-3 text-slate-500">Custom-built</a>
+        <div class="ml-auto flex items-center gap-2 text-xs text-slate-500">
+          <span>Sort</span>
+          <span class="rounded-lg border border-slate-300 px-3 py-1.5 font-semibold text-slate-700">Newest ▾</span>
+          <span class="rounded-lg border border-slate-300 px-3 py-1.5 font-semibold text-slate-700">🔔 Save this search</span>
+        </div>
+      </div>
+
+      <div class="flex min-h-0 flex-1">
+        <!-- Filters -->
+        <aside class="w-64 shrink-0 overflow-hidden border-r border-slate-200 bg-white px-6 py-5 text-sm">
+          <div class="flex items-center justify-between">
+            <div class="font-bold text-slate-900">Filters</div>
+            <a class="text-xs font-semibold text-orange-600">Clear all</a>
+          </div>
+
+          <div class="mt-5 text-xs font-semibold uppercase tracking-wide text-slate-500">Price</div>
+          <div class="mt-3 flex items-center gap-2">
+            <div class="flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-center font-semibold">¥40M</div>
+            <span class="text-slate-400">–</span>
+            <div class="flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-center font-semibold">¥90M</div>
+          </div>
+          <div class="relative mt-4 h-1.5 rounded-full bg-slate-200">
+            <div class="absolute inset-y-0 left-[20%] right-[30%] rounded-full bg-orange-500"></div>
+            <div class="absolute -top-1.5 left-[20%] h-4 w-4 -translate-x-1/2 rounded-full border-4 border-white bg-orange-500 shadow"></div>
+            <div class="absolute -top-1.5 left-[70%] h-4 w-4 -translate-x-1/2 rounded-full border-4 border-white bg-orange-500 shadow"></div>
+          </div>
+
+          <div class="mt-6 text-xs font-semibold uppercase tracking-wide text-slate-500">Layout</div>
+          <div class="mt-3 grid grid-cols-3 gap-2 text-center text-xs font-semibold">
+            <span class="rounded-lg border border-slate-300 py-1.5">1K/1DK</span>
+            <span class="rounded-lg border border-slate-300 py-1.5">1LDK</span>
+            <span class="rounded-lg border-2 border-orange-500 bg-orange-50 py-1.5 text-orange-700">2LDK</span>
+            <span class="rounded-lg border-2 border-orange-500 bg-orange-50 py-1.5 text-orange-700">3LDK</span>
+            <span class="rounded-lg border border-slate-300 py-1.5">4LDK+</span>
+            <span class="rounded-lg border border-slate-300 py-1.5">Studio</span>
+          </div>
+
+          <div class="mt-6 text-xs font-semibold uppercase tracking-wide text-slate-500">Walk to station</div>
+          <div class="mt-3 space-y-2">
+            <label class="flex items-center gap-2"><span class="h-4 w-4 rounded-full border border-slate-300"></span>Within 5 min</label>
+            <label class="flex items-center gap-2"><span class="grid h-4 w-4 place-items-center rounded-full border-2 border-orange-500"><span class="h-2 w-2 rounded-full bg-orange-500"></span></span><b>Within 10 min</b></label>
+            <label class="flex items-center gap-2"><span class="h-4 w-4 rounded-full border border-slate-300"></span>Within 15 min</label>
+            <label class="flex items-center gap-2"><span class="h-4 w-4 rounded-full border border-slate-300"></span>Any</label>
+          </div>
+
+          <div class="mt-6 text-xs font-semibold uppercase tracking-wide text-slate-500">Floor area</div>
+          <div class="mt-3 flex items-center gap-2">
+            <div class="flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-center font-semibold">55 m²</div>
+            <span class="text-slate-400">–</span>
+            <div class="flex-1 rounded-lg border border-slate-300 px-3 py-1.5 text-center text-slate-400">No max</div>
+          </div>
+
+          <div class="mt-6 text-xs font-semibold uppercase tracking-wide text-slate-500">Features</div>
+          <div class="mt-3 flex flex-wrap gap-1.5 text-xs">
+            <span class="rounded-full bg-slate-900 px-2.5 py-1 text-white">South-facing</span>
+            <span class="rounded-full border border-slate-300 px-2.5 py-1">Pet-friendly</span>
+            <span class="rounded-full bg-slate-900 px-2.5 py-1 text-white">Built 2005+</span>
+            <span class="rounded-full border border-slate-300 px-2.5 py-1">Corner unit</span>
+            <span class="rounded-full border border-slate-300 px-2.5 py-1">Auto-lock</span>
+          </div>
+
+          <button class="mt-6 w-full rounded-lg bg-orange-500 py-2.5 font-semibold text-white">Show 214 homes</button>
+        </aside>
+
+        <!-- Results -->
+        <section class="w-[540px] shrink-0 overflow-hidden px-6 py-5">
+          <div class="flex items-baseline justify-between">
+            <h1 class="text-lg font-bold text-slate-900">214 used condos in Setagaya</h1>
+            <span class="text-xs text-slate-500">1–20 shown</span>
+          </div>
+
+          <div class="mt-4 space-y-3">
+            <article class="flex gap-4 rounded-2xl border-2 border-orange-400 bg-white p-3 shadow-sm">
+              <div class="ph ph-warm relative h-28 w-40 shrink-0 rounded-xl">
+                <span class="absolute left-2 top-2 rounded bg-white/90 px-1.5 py-0.5 text-[10px] font-bold text-orange-700">NEW</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-start justify-between">
+                  <div class="text-xl font-extrabold text-slate-900">¥68,800,000</div>
+                  <span class="text-lg text-orange-500">♥</span>
+                </div>
+                <div class="truncate text-sm font-semibold">Sakura Terrace Futako · 6F</div>
+                <div class="mt-1 flex gap-3 text-xs text-slate-600"><b>3LDK</b><span>72.4 m²</span><span>Built 2012</span></div>
+                <div class="mt-2 text-xs text-slate-500">🚉 Futako-Tamagawa · <b class="text-slate-700">7 min walk</b></div>
+              </div>
+            </article>
+
+            <article class="flex gap-4 rounded-2xl border border-slate-200 bg-white p-3">
+              <div class="ph ph-cool h-28 w-40 shrink-0 rounded-xl"></div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-start justify-between">
+                  <div class="text-xl font-extrabold text-slate-900">¥54,900,000</div>
+                  <span class="text-lg text-slate-300">♡</span>
+                </div>
+                <div class="truncate text-sm font-semibold">Grandia Sangenjaya · 3F</div>
+                <div class="mt-1 flex gap-3 text-xs text-slate-600"><b>2LDK</b><span>58.1 m²</span><span>Built 2008</span></div>
+                <div class="mt-2 text-xs text-slate-500">🚉 Sangen-jaya · <b class="text-slate-700">4 min walk</b></div>
+              </div>
+            </article>
+
+            <article class="flex gap-4 rounded-2xl border border-slate-200 bg-white p-3">
+              <div class="ph ph-green relative h-28 w-40 shrink-0 rounded-xl">
+                <span class="absolute left-2 top-2 rounded bg-emerald-600 px-1.5 py-0.5 text-[10px] font-bold text-white">PRICE ↓</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-start justify-between">
+                  <div class="text-xl font-extrabold text-slate-900">¥79,500,000 <span class="text-xs font-medium text-slate-400 line-through">¥82.0M</span></div>
+                  <span class="text-lg text-slate-300">♡</span>
+                </div>
+                <div class="truncate text-sm font-semibold">Parkside Residence Kyodo · 9F</div>
+                <div class="mt-1 flex gap-3 text-xs text-slate-600"><b>3LDK</b><span>81.6 m²</span><span>Built 2016</span></div>
+                <div class="mt-2 text-xs text-slate-500">🚉 Kyodo · <b class="text-slate-700">9 min walk</b></div>
+              </div>
+            </article>
+
+            <article class="flex gap-4 rounded-2xl border border-slate-200 bg-white p-3">
+              <div class="ph h-28 w-40 shrink-0 rounded-xl"></div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-start justify-between">
+                  <div class="text-xl font-extrabold text-slate-900">¥46,300,000</div>
+                  <span class="text-lg text-slate-300">♡</span>
+                </div>
+                <div class="truncate text-sm font-semibold">Maison Sakurashinmachi · 2F</div>
+                <div class="mt-1 flex gap-3 text-xs text-slate-600"><b>2LDK</b><span>56.0 m²</span><span>Built 2006</span></div>
+                <div class="mt-2 text-xs text-slate-500">🚉 Sakura-shinmachi · <b class="text-slate-700">5 min walk</b></div>
+              </div>
+            </article>
+
+            <article class="flex gap-4 rounded-2xl border border-slate-200 bg-white p-3">
+              <div class="ph ph-dusk h-28 w-40 shrink-0 rounded-xl"></div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-start justify-between">
+                  <div class="text-xl font-extrabold text-slate-900">¥88,000,000</div>
+                  <span class="text-lg text-slate-300">♡</span>
+                </div>
+                <div class="truncate text-sm font-semibold">The Heights Kyodo Garden · 12F</div>
+                <div class="mt-1 flex gap-3 text-xs text-slate-600"><b>3LDK</b><span>90.2 m²</span><span>Built 2019</span></div>
+                <div class="mt-2 text-xs text-slate-500">🚉 Kyodo · <b class="text-slate-700">6 min walk</b></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Map -->
+        <section class="relative min-w-0 flex-1 overflow-hidden bg-[#eef1e8]">
+          <svg class="absolute inset-0 h-full w-full" viewBox="0 0 640 740" preserveAspectRatio="xMidYMid slice">
+            <!-- park + river -->
+            <path d="M0 610 C120 590 200 660 330 640 S560 600 640 640 L640 740 L0 740 Z" fill="#cfe3ef" />
+            <path d="M0 628 C120 608 200 678 330 658 S560 618 640 658" stroke="#b5d3e6" stroke-width="3" fill="none" />
+            <rect x="380" y="120" width="150" height="110" rx="14" fill="#d5e8c6" />
+            <rect x="60" y="400" width="110" height="90" rx="12" fill="#d5e8c6" />
+            <!-- block grid -->
+            <g stroke="#ffffff" stroke-width="10" fill="none">
+              <path d="M0 90 L640 70" /><path d="M0 260 L640 250" /><path d="M0 380 L640 400" /><path d="M0 520 L640 540" />
+              <path d="M110 0 L130 740" /><path d="M260 0 L250 740" /><path d="M360 0 L380 740" /><path d="M560 0 L540 740" />
+            </g>
+            <g stroke="#ffffff" stroke-width="4" fill="none">
+              <path d="M0 170 L640 160" /><path d="M0 320 L640 330" /><path d="M0 460 L640 470" />
+              <path d="M190 0 L185 740" /><path d="M460 0 L470 740" /><path d="M40 0 L60 740" />
+            </g>
+            <!-- main road -->
+            <path d="M0 700 L640 20" stroke="#fde7b0" stroke-width="16" fill="none" />
+            <path d="M0 700 L640 20" stroke="#f5cf6b" stroke-width="2" fill="none" />
+            <!-- railway -->
+            <path d="M0 300 C160 280 260 200 380 190 S560 140 640 110" stroke="#334155" stroke-width="7" fill="none" />
+            <path d="M0 300 C160 280 260 200 380 190 S560 140 640 110" stroke="#ffffff" stroke-width="3" stroke-dasharray="10 10" fill="none" />
+            <path d="M0 560 C140 540 300 520 420 470 S580 380 640 360" stroke="#334155" stroke-width="7" fill="none" />
+            <path d="M0 560 C140 540 300 520 420 470 S580 380 640 360" stroke="#ffffff" stroke-width="3" stroke-dasharray="10 10" fill="none" />
+            <!-- stations -->
+            <g fill="#ffffff" stroke="#334155" stroke-width="3">
+              <circle cx="120" cy="286" r="8" /><circle cx="380" cy="190" r="8" /><circle cx="590" cy="126" r="8" />
+              <circle cx="180" cy="540" r="8" /><circle cx="420" cy="470" r="8" />
+            </g>
+            <g font-family="Inter" font-size="12" font-weight="700" fill="#334155">
+              <text x="92" y="320">Kyodo</text><text x="330" y="222">Sakura-shinmachi</text><text x="512" y="106">Sangen-jaya</text>
+              <text x="140" y="574">Futako-Tamagawa</text><text x="430" y="505">Kaminoge</text>
+            </g>
+            <g font-family="Inter" font-size="11" fill="#6b8f5e" font-weight="600">
+              <text x="400" y="142">Setagaya Park</text>
+            </g>
+            <text x="440" y="700" font-family="Inter" font-size="11" fill="#5b8bb0" font-weight="600" font-style="italic">Tama River</text>
+          </svg>
+
+          <!-- price pins -->
+          <div class="absolute left-[14%] top-[36%] rounded-full bg-white px-2.5 py-1 text-xs font-bold text-slate-800 shadow-md ring-1 ring-slate-200">¥79.5M</div>
+          <div class="absolute left-[30%] top-[18%] rounded-full bg-white px-2.5 py-1 text-xs font-bold text-slate-800 shadow-md ring-1 ring-slate-200">¥88.0M</div>
+          <div class="absolute left-[50%] top-[33%] rounded-full bg-white px-2.5 py-1 text-xs font-bold text-slate-800 shadow-md ring-1 ring-slate-200">¥46.3M</div>
+          <div class="absolute left-[62%] top-[6%] rounded-full bg-white px-2.5 py-1 text-xs font-bold text-slate-800 shadow-md ring-1 ring-slate-200">¥54.9M</div>
+          <div class="absolute left-[64%] top-[52%] rounded-full bg-white px-2.5 py-1 text-xs font-bold text-slate-800 shadow-md ring-1 ring-slate-200">¥61.2M</div>
+          <div class="absolute left-[3%] top-[47%] rounded-full bg-white px-2.5 py-1 text-xs font-bold text-slate-800 shadow-md ring-1 ring-slate-200">¥52.0M</div>
+          <div class="absolute left-[72%] top-[28%] grid h-8 w-8 place-items-center rounded-full bg-slate-800 text-xs font-bold text-white shadow-md">12</div>
+          <div class="absolute left-[44%] top-[62%] grid h-8 w-8 place-items-center rounded-full bg-slate-800 text-xs font-bold text-white shadow-md">7</div>
+
+          <!-- selected pin + popup -->
+          <div class="absolute left-[28%] top-[70%]">
+            <div class="absolute bottom-9 left-1/2 w-60 -translate-x-1/2 rounded-xl bg-white p-2 shadow-xl">
+              <div class="flex gap-2">
+                <div class="ph ph-warm h-14 w-16 shrink-0 rounded-lg"></div>
+                <div class="text-xs">
+                  <div class="font-bold text-slate-900">¥68,800,000</div>
+                  <div class="text-slate-600">3LDK · 72.4 m²</div>
+                  <div class="whitespace-nowrap text-slate-500">Futako-Tamagawa · 7 min</div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-full bg-orange-500 px-3 py-1 text-xs font-bold text-white shadow-lg ring-4 ring-orange-200">¥68.8M</div>
+          </div>
+
+          <!-- map controls -->
+          <div class="absolute left-4 top-4 flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-semibold shadow">
+            <span class="grid h-4 w-4 place-items-center rounded bg-orange-500 text-[10px] text-white">✓</span> Search as I move the map
+          </div>
+          <div class="absolute right-4 top-4 flex overflow-hidden rounded-lg bg-white text-xs font-semibold shadow">
+            <span class="bg-slate-900 px-3 py-2 text-white">Map</span><span class="px-3 py-2">Satellite</span>
+          </div>
+          <div class="absolute bottom-6 right-4 flex flex-col overflow-hidden rounded-lg bg-white text-lg font-bold shadow">
+            <span class="grid h-9 w-9 place-items-center border-b border-slate-200">+</span>
+            <span class="grid h-9 w-9 place-items-center">−</span>
+          </div>
+          <div class="absolute bottom-6 left-4 rounded-lg bg-white/95 px-3 py-2 text-[11px] text-slate-600 shadow">
+            <div class="flex items-center gap-2"><span class="h-1.5 w-6 rounded bg-slate-700"></span>Railway</div>
+            <div class="mt-1 flex items-center gap-2"><span class="h-1.5 w-6 rounded bg-amber-200"></span>Main road</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tailspin Agency Hub · Inbox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../_base.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <div class="flex h-full">
+      <!-- Sidebar -->
+      <aside class="flex w-60 shrink-0 flex-col bg-indigo-950 text-indigo-200">
+        <div class="flex items-center gap-2 px-5 py-5">
+          <div class="grid h-8 w-8 place-items-center rounded-lg bg-indigo-500 font-extrabold text-white">T</div>
+          <div>
+            <div class="text-sm font-bold text-white">Tailspin</div>
+            <div class="text-xs text-indigo-300">Agency Hub</div>
+          </div>
+        </div>
+        <nav class="mt-2 space-y-1 px-3 text-sm">
+          <a class="flex items-center justify-between rounded-lg bg-indigo-500/20 px-3 py-2 font-semibold text-white"><span>✉ Inbox</span><span class="rounded-full bg-indigo-500 px-2 text-xs">14</span></a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">☎ Calls</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">💬 Texts</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">📠 Fax</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">✍ E-sign</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">👥 Clients</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">📊 Reports</a>
+          <a class="flex items-center gap-3 rounded-lg px-3 py-2">⚙ Settings</a>
+        </nav>
+        <div class="mx-3 mt-6 rounded-xl bg-indigo-900/60 p-3 text-xs">
+          <div class="font-semibold text-white">Team queues</div>
+          <div class="mt-2 flex justify-between"><span>Personal lines</span><span class="text-white">6</span></div>
+          <div class="mt-1 flex justify-between"><span>Commercial</span><span class="text-white">5</span></div>
+          <div class="mt-1 flex justify-between"><span>Claims desk</span><span class="text-white">3</span></div>
+        </div>
+        <div class="mt-auto flex items-center gap-3 border-t border-indigo-900 px-5 py-4 text-xs">
+          <div class="relative grid h-8 w-8 place-items-center rounded-full bg-indigo-400 font-bold text-white">JC<span class="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-indigo-950 bg-emerald-400"></span></div>
+          <div>
+            <div class="font-semibold text-white">Jordan Casey</div>
+            <div class="text-indigo-300">Account Manager · Available</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Conversation list -->
+      <section class="flex w-[360px] shrink-0 flex-col border-r border-slate-200 bg-white">
+        <div class="border-b border-slate-200 p-4">
+          <div class="flex items-center justify-between">
+            <h1 class="text-lg font-bold text-slate-900">Unified inbox</h1>
+            <button class="rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white">+ New</button>
+          </div>
+          <div class="mt-3 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-400">🔍 Search clients, policies, numbers…</div>
+          <div class="mt-3 flex gap-1.5 text-xs font-semibold">
+            <span class="rounded-full bg-indigo-600 px-2.5 py-1 text-white">All</span>
+            <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-600">Calls</span>
+            <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-600">SMS</span>
+            <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-600">Chat</span>
+            <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-600">Fax</span>
+            <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-600">E-sign</span>
+          </div>
+        </div>
+        <ul class="flex-1 divide-y divide-slate-100 overflow-hidden text-sm">
+          <li class="flex gap-3 border-l-4 border-indigo-600 bg-indigo-50/70 px-4 py-3">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-indigo-100 font-bold text-indigo-700">MR</div>
+            <div class="min-w-0 flex-1">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Maria Reyes</span><span class="text-xs text-slate-400">10:42</span></div>
+              <div class="truncate text-slate-600">💬 Great, can you send the renewal to sign?</div>
+              <div class="mt-1 flex gap-1"><span class="rounded bg-indigo-100 px-1.5 text-[11px] font-semibold text-indigo-700">SMS</span><span class="rounded bg-slate-100 px-1.5 text-[11px] text-slate-500">Auto · renewal</span></div>
+            </div>
+          </li>
+          <li class="flex gap-3 px-4 py-3">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-rose-100 text-rose-600">☎</div>
+            <div class="min-w-0 flex-1">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Tom Whitaker</span><span class="text-xs text-slate-400">10:18</span></div>
+              <div class="truncate font-medium text-rose-600">↙ Missed call · left voicemail (0:48)</div>
+              <div class="mt-1 flex gap-1"><span class="rounded bg-rose-50 px-1.5 text-[11px] font-semibold text-rose-600">Missed</span><span class="rounded bg-slate-100 px-1.5 text-[11px] text-slate-500">Main line</span></div>
+            </div>
+            <span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-indigo-600"></span>
+          </li>
+          <li class="flex gap-3 px-4 py-3">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-700">☎</div>
+            <div class="min-w-0 flex-1">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Harbor Bakery Co.</span><span class="text-xs text-slate-400">09:55</span></div>
+              <div class="truncate text-slate-600">↗ Outbound call · 12:04 · BOP quote review</div>
+              <div class="mt-1 flex gap-1"><span class="rounded bg-emerald-50 px-1.5 text-[11px] font-semibold text-emerald-700">Call</span><span class="rounded bg-slate-100 px-1.5 text-[11px] text-slate-500">● Recorded</span></div>
+            </div>
+          </li>
+          <li class="flex gap-3 px-4 py-3">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-sky-100 font-bold text-sky-700">LN</div>
+            <div class="min-w-0 flex-1">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Lena Novak</span><span class="text-xs text-slate-400">09:31</span></div>
+              <div class="truncate text-slate-600">🗨 Web chat: Does my policy cover a rental car?</div>
+              <div class="mt-1 flex gap-1"><span class="rounded bg-sky-50 px-1.5 text-[11px] font-semibold text-sky-700">Chat</span></div>
+            </div>
+            <span class="mt-1 h-2 w-2 shrink-0 rounded-full bg-indigo-600"></span>
+          </li>
+          <li class="flex gap-3 px-4 py-3">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-slate-200 text-slate-600">📠</div>
+            <div class="min-w-0 flex-1">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Carrier underwriting</span><span class="text-xs text-slate-400">08:47</span></div>
+              <div class="truncate text-slate-600">Inbound fax · 4 pages · loss runs, Delgado Auto</div>
+              <div class="mt-1 flex gap-1"><span class="rounded bg-slate-100 px-1.5 text-[11px] font-semibold text-slate-600">Fax</span><span class="rounded bg-slate-100 px-1.5 text-[11px] text-slate-500">Attached to AMS</span></div>
+            </div>
+          </li>
+          <li class="flex gap-3 px-4 py-3">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-amber-100 text-amber-700">✍</div>
+            <div class="min-w-0 flex-1">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Sam &amp; Dana Pierce</span><span class="text-xs text-slate-400">Yesterday</span></div>
+              <div class="truncate text-slate-600">E-sign completed · Homeowners application</div>
+              <div class="mt-1 flex gap-1"><span class="rounded bg-amber-50 px-1.5 text-[11px] font-semibold text-amber-700">E-sign</span><span class="rounded bg-emerald-50 px-1.5 text-[11px] text-emerald-700">✓ 2 of 2 signed</span></div>
+            </div>
+          </li>
+          <li class="flex gap-3 px-4 py-3">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-700">☎</div>
+            <div class="min-w-0 flex-1">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Owen Brooks</span><span class="text-xs text-slate-400">Yesterday</span></div>
+              <div class="truncate text-slate-600">↙ Inbound call · 6:31 · claim status</div>
+              <div class="mt-1 flex gap-1"><span class="rounded bg-emerald-50 px-1.5 text-[11px] font-semibold text-emerald-700">Call</span></div>
+            </div>
+          </li>
+          <li class="flex gap-3 px-4 py-3">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-violet-100 font-bold text-violet-700">KA</div>
+            <div class="min-w-0 flex-1">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Kofi Asante</span><span class="text-xs text-slate-400">Yesterday</span></div>
+              <div class="truncate text-slate-600">💬 Thanks! Got the ID cards.</div>
+              <div class="mt-1 flex gap-1"><span class="rounded bg-indigo-100 px-1.5 text-[11px] font-semibold text-indigo-700">SMS</span></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Thread -->
+      <section class="flex min-w-0 flex-1 flex-col">
+        <header class="flex items-center justify-between gap-3 border-b border-slate-200 bg-white px-5 py-4">
+          <div class="flex items-center gap-3">
+            <div class="grid h-10 w-10 place-items-center rounded-full bg-indigo-100 font-bold text-indigo-700">MR</div>
+            <div>
+              <div class="font-bold text-slate-900">Maria Reyes</div>
+              <div class="whitespace-nowrap text-xs text-slate-500">(555) 214-8870 · renews Oct 15</div>
+            </div>
+          </div>
+          <div class="flex shrink-0 gap-2 whitespace-nowrap text-xs font-semibold">
+            <button class="rounded-lg border border-slate-300 bg-white px-3 py-1.5">☎ Call</button>
+            <button class="rounded-lg border border-slate-300 bg-white px-3 py-1.5">✍ E-sign</button>
+            <button class="rounded-lg bg-indigo-600 px-3 py-1.5 text-white">✓ Resolve</button>
+          </div>
+        </header>
+
+        <div class="flex-1 space-y-4 overflow-hidden px-6 py-5 text-sm">
+          <div class="text-center text-xs font-semibold uppercase tracking-wide text-slate-400">Today</div>
+
+          <div class="flex justify-end">
+            <div class="max-w-[70%] rounded-2xl rounded-br-sm bg-indigo-600 px-4 py-2.5 text-white">
+              Hi Maria, your auto &amp; home policies renew Oct 15. We re-marketed and found a combined option that saves about $312/yr. Can I call you to walk through it?
+              <div class="mt-1 text-right text-[11px] text-indigo-200">09:02 · Jordan · SMS</div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="max-w-[70%] rounded-2xl rounded-bl-sm bg-white px-4 py-2.5 shadow-sm ring-1 ring-slate-200">
+              Yes please, I'm free now.
+              <div class="mt-1 text-[11px] text-slate-400">09:14 · SMS</div>
+            </div>
+          </div>
+
+          <!-- Call log -->
+          <div class="mx-auto w-[88%] rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="grid h-9 w-9 place-items-center rounded-full bg-emerald-100 text-emerald-700">↗</div>
+                <div>
+                  <div class="font-semibold text-slate-900">Outbound call · 14:26</div>
+                  <div class="text-xs text-slate-500">09:16 · via RingCentral · Main office line</div>
+                </div>
+              </div>
+              <span class="rounded-full bg-rose-50 px-2 py-0.5 text-xs font-semibold text-rose-600">● Recorded</span>
+            </div>
+            <div class="mt-3 flex items-center gap-3 rounded-lg bg-slate-50 px-3 py-2">
+              <span class="grid h-7 w-7 place-items-center rounded-full bg-indigo-600 text-xs text-white">▶</span>
+              <div class="flex h-6 flex-1 items-center gap-[3px]">
+                <span class="h-2 w-1 rounded bg-indigo-400"></span><span class="h-4 w-1 rounded bg-indigo-400"></span><span class="h-5 w-1 rounded bg-indigo-400"></span><span class="h-3 w-1 rounded bg-indigo-400"></span><span class="h-6 w-1 rounded bg-indigo-400"></span><span class="h-4 w-1 rounded bg-indigo-400"></span><span class="h-2 w-1 rounded bg-indigo-400"></span><span class="h-5 w-1 rounded bg-indigo-400"></span><span class="h-3 w-1 rounded bg-indigo-400"></span><span class="h-6 w-1 rounded bg-indigo-400"></span><span class="h-4 w-1 rounded bg-indigo-400"></span><span class="h-3 w-1 rounded bg-indigo-400"></span>
+                <span class="h-5 w-1 rounded bg-slate-300"></span><span class="h-2 w-1 rounded bg-slate-300"></span><span class="h-4 w-1 rounded bg-slate-300"></span><span class="h-6 w-1 rounded bg-slate-300"></span><span class="h-3 w-1 rounded bg-slate-300"></span><span class="h-5 w-1 rounded bg-slate-300"></span><span class="h-2 w-1 rounded bg-slate-300"></span><span class="h-4 w-1 rounded bg-slate-300"></span><span class="h-3 w-1 rounded bg-slate-300"></span><span class="h-5 w-1 rounded bg-slate-300"></span><span class="h-6 w-1 rounded bg-slate-300"></span><span class="h-2 w-1 rounded bg-slate-300"></span><span class="h-4 w-1 rounded bg-slate-300"></span><span class="h-3 w-1 rounded bg-slate-300"></span><span class="h-5 w-1 rounded bg-slate-300"></span><span class="h-2 w-1 rounded bg-slate-300"></span><span class="h-4 w-1 rounded bg-slate-300"></span><span class="h-3 w-1 rounded bg-slate-300"></span><span class="h-5 w-1 rounded bg-slate-300"></span><span class="h-2 w-1 rounded bg-slate-300"></span>
+              </div>
+              <span class="text-xs text-slate-500">04:51 / 14:26</span>
+            </div>
+            <div class="mt-3 rounded-lg bg-indigo-50 px-3 py-2 text-xs text-indigo-900">
+              <b>✦ Call summary:</b> Client agreed to bundle auto + home with the new carrier. Wants deductible raised to $1,000. Send renewal packet for e-sign today.
+            </div>
+          </div>
+
+          <div class="flex justify-end">
+            <div class="max-w-[70%] rounded-2xl rounded-br-sm bg-indigo-600 px-4 py-2.5 text-white">
+              Thanks for your time! Updated quote with the $1,000 deductible: $2,148/yr total. I'll send the paperwork to sign.
+              <div class="mt-1 text-right text-[11px] text-indigo-200">10:37 · Jordan · SMS</div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="max-w-[70%] rounded-2xl rounded-bl-sm bg-white px-4 py-2.5 shadow-sm ring-1 ring-slate-200">
+              Great, can you send the renewal to sign?
+              <div class="mt-1 text-[11px] text-slate-400">10:42 · SMS</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Composer -->
+        <div class="border-t border-slate-200 bg-white px-6 py-4">
+          <div class="flex gap-2 text-xs font-semibold">
+            <span class="rounded-md bg-indigo-100 px-2 py-1 text-indigo-700">SMS</span>
+            <span class="rounded-md px-2 py-1 text-slate-500">Email</span>
+            <span class="rounded-md px-2 py-1 text-slate-500">Internal note</span>
+          </div>
+          <div class="mt-2 flex items-center gap-3">
+            <div class="flex-1 rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-400">Reply to Maria… (type / for templates)</div>
+            <button class="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white">Send</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client panel -->
+      <aside class="w-[300px] shrink-0 space-y-4 overflow-hidden border-l border-slate-200 bg-white p-5 text-sm">
+        <div>
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Client</div>
+            <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold text-slate-500">AMS · CRM synced</span>
+          </div>
+          <div class="mt-2 text-base font-bold text-slate-900">Maria Reyes</div>
+          <div class="text-xs text-slate-500">Client since 2019 · Household of 3</div>
+          <div class="mt-2 flex gap-1.5">
+            <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700">Preferred</span>
+            <span class="rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700">SMS opt-in</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 p-3">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Policies · AMS</div>
+            <span class="text-xs font-semibold text-indigo-600">Open ↗</span>
+          </div>
+          <div class="mt-2 space-y-2">
+            <div class="rounded-lg bg-amber-50 p-2.5">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Personal Auto</span><span class="text-xs font-semibold text-amber-700">Renews in 21 d</span></div>
+              <div class="text-xs text-slate-500">PA-4471903 · 2 vehicles · $1,284/yr</div>
+            </div>
+            <div class="rounded-lg bg-amber-50 p-2.5">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Homeowners</span><span class="text-xs font-semibold text-amber-700">Renews in 21 d</span></div>
+              <div class="text-xs text-slate-500">HO-2208156 · $1,176/yr</div>
+            </div>
+            <div class="rounded-lg bg-slate-50 p-2.5">
+              <div class="flex justify-between"><span class="font-semibold text-slate-900">Umbrella</span><span class="text-xs text-slate-500">Active</span></div>
+              <div class="text-xs text-slate-500">UM-0930412 · $1M · $265/yr</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 p-3">
+          <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">CRM opportunity</div>
+          <div class="mt-2 flex justify-between"><span class="font-semibold text-slate-900">Renewal · bundle</span><span class="text-xs font-semibold text-indigo-600">Proposal</span></div>
+          <div class="mt-2 h-1.5 rounded-full bg-slate-200"><div class="h-1.5 w-3/4 rounded-full bg-indigo-500"></div></div>
+          <div class="mt-2 text-xs text-slate-500">Est. premium $2,148 · saves $312/yr</div>
+        </div>
+
+        <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-3">
+          <div class="text-xs font-semibold uppercase tracking-wide text-indigo-500">Open tasks · CRM</div>
+          <ul class="mt-2 space-y-2 text-xs">
+            <li class="flex items-start gap-2"><span class="mt-0.5 h-3.5 w-3.5 shrink-0 rounded border border-indigo-400 bg-white"></span><span><b class="text-slate-800">Send renewal packet for e-sign</b><br /><span class="text-rose-600">Due today</span> · Jordan</span></li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 h-3.5 w-3.5 shrink-0 rounded border border-indigo-400 bg-white"></span><span><b class="text-slate-800">Update deductible to $1,000 in AMS</b><br /><span class="text-slate-500">Due Sep 26 · Jordan</span></span></li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 grid h-3.5 w-3.5 shrink-0 place-items-center rounded bg-indigo-600 text-[9px] text-white">✓</span><span class="text-slate-400 line-through">Re-market auto + home</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Recent activity</div>
+          <ul class="mt-2 space-y-2 text-xs text-slate-600">
+            <li class="flex gap-2"><span class="text-emerald-600">☎</span>Call logged to AMS activity · 09:30</li>
+            <li class="flex gap-2"><span class="text-indigo-600">✉</span>Renewal notice emailed · Sep 20</li>
+            <li class="flex gap-2"><span class="text-amber-600">✍</span>ID cards e-signed · Apr 2</li>
+            <li class="flex gap-2"><span class="text-slate-500">📠</span>Prior-carrier dec page faxed · Mar 28</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

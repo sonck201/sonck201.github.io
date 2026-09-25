@@ -1,0 +1,43 @@
+/*
+ * Shared base for gallery mockups (concept recreations).
+ * Every screen is captured at a fixed viewport:
+ *   browser screens: 1440×900
+ *   *.phone.html:    390×844 (device "iPhone 13")
+ * All brands, people, and numbers are fictional.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Soft placeholder "photo" blocks, so no stock images are needed */
+.ph {
+  background: linear-gradient(135deg, var(--ph-a, #cbd5e1), var(--ph-b, #94a3b8));
+}
+.ph-warm {
+  --ph-a: #fde68a;
+  --ph-b: #f97316;
+}
+.ph-cool {
+  --ph-a: #bae6fd;
+  --ph-b: #6366f1;
+}
+.ph-green {
+  --ph-a: #bbf7d0;
+  --ph-b: #0d9488;
+}
+.ph-rose {
+  --ph-a: #fecdd3;
+  --ph-b: #db2777;
+}
+.ph-dusk {
+  --ph-a: #334155;
+  --ph-b: #7c3aed;
+}
